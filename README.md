@@ -1,5 +1,5 @@
 
-# Machine Learning and Data Analysis for Nuclear Physics, a Nuclear TALENT Course at the ECT*, Trento, Italy, July 19 to July 30 2020.
+# Machine Learning and Data Analysis for Nuclear Physics, a Nuclear TALENT Course at the ECT*, Trento, Italy, July 19 to July 30 2021.
 
 ## Why a course on Machine Learning for Nuclear Physics?
 
