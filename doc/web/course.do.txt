@@ -9,17 +9,17 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 pub_url = 'https://nucleartalent.github.io/MachineLearningECT/doc/pub'
 published = ['Introduction', 'Day1', 'Day2', 'Day3', 'Day4', 'Day5', 'Day6', 'Day7', 'Day8',  'Day9', 'Day10',]
 chapters = {
- 'Introduction': 'Monday June 22: Introduction', 
- 'Day1': 'Monday June 22: Linear Regression',
- 'Day2': 'Tuesday June 23: Logistic Regression and Gradient Methods',
- 'Day3': 'Wednesday June 24: Decision Trees, Random Forests, Bagging and Boosting',
- 'Day4': 'Thursday June 25: Introduction to Neural Networks and Deep Learning',
- 'Day5': 'Friday June 26: Beta-decay experiments, how to analyze various events, with hands-on examples ',
- 'Day6': 'Monday June 29: Deep Learning and Neural networks',
- 'Day7': 'Tuesday June 30: From Neural Networks to Convolutional Neural Networks',
- 'Day8': 'Wednesday July 1: Discussion of nuclear experiments and how to analyze data, presentation of simulated data from Active-Target Time-Projection Chamber',
- 'Day9': 'Thursday July 2: Generative models',
- 'Day10': 'Friday July 3: Reinforcement Learning. Future directions in machine learning and summary of course.',
+ 'Introduction': 'Monday July 19: Introduction', 
+ 'Day1': 'Monday July 20: Linear Regression',
+ 'Day2': 'Tuesday July 21: Logistic Regression and Gradient Methods',
+ 'Day3': 'Wednesday July 22: Decision Trees, Random Forests, Bagging and Boosting',
+ 'Day4': 'Thursday July 23: Introduction to Neural Networks and Deep Learning',
+ 'Day5': 'Friday July 24: Beta-decay experiments, how to analyze various events, with hands-on examples ',
+ 'Day6': 'Monday July 26: Deep Learning and Neural networks',
+ 'Day7': 'Tuesday July 27: From Neural Networks to Convolutional Neural Networks',
+ 'Day8': 'Wednesday July 28: Discussion of nuclear experiments and how to analyze data, presentation of simulated data from Active-Target Time-Projection Chamber',
+ 'Day9': 'Thursday July 29: Generative models',
+ 'Day10': 'Friday July 30: Reinforcement Learning. Future directions in machine learning and summary of course.',
 }
 %>
 
