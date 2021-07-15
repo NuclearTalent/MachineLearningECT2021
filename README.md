@@ -94,9 +94,9 @@ Jupyter-notebook at https://nucleartalent.github.io/MachineLearningECT/doc/pub/D
 
 
 ## Teaching
-The course will be taught as an online intensive course of duration of two weeks, with a total time of 20 h of lectures and 10 h of exercises, questions and answers. Videos and digital learning material will be made available one week before the course begins. It is possible to work on a final assignment of 2 weeks of work. The total load will be approximately 80 hours, corresponding to 5 ECTS in Europe. The final assignment will be graded with marks A, B, C, D, E and failed for Master students and passed/not passed for PhD students. A course certificate will be issued for students requiring it from the University of Trento.
+The course will be taught as an online intensive course of duration of two weeks, with a total time of 20 h of lectures and 10 h of exercises, questions and answers. Videos and digital learning material is available from the above links. It is possible to work on a final assignment of 2 weeks of work. The total load will be approximately 80 hours, corresponding to 5 ECTS in Europe. The final assignment will be graded with marks A, B, C, D, E and failed for Master students and passed/not passed for PhD students. A course certificate will be issued for students requiring it from the University of Trento.
 
-The registration link is at https://www.ectstar.eu/node/4472
+
 
 The organization of a typical course day is as follows:
 
