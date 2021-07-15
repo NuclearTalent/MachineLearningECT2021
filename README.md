@@ -72,7 +72,7 @@ At the end of the course the students should have a basic understanding of
 ## Course Content and detailed plan of online Talent course
 The tentative (prone to revisions) lecture plan is as follows
 
-### Week 1
+### Week 1, July 19-23
 
 - _Monday_ Linear Regression and intro to statistical data analysis	(Morten Hjorth-Jensen MHJ). Learning slides at
 https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Introduction.html and https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/html/Day1.html
@@ -81,7 +81,7 @@ https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Int
 - _Thursday_	Basics of Neural Networks and writing your own Neural Network code (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/html/Day4.html
 - _Friday_	Beta-decay experiments, how to analyze various events, with hands-on examples . (Sean Liddick) Videos and teaching material https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/html/Day5.html. 
 
-### Week 2
+### Week 2, July 26-30
 
 - _Monday_	Neural Networks and Deep Learning (Raghu Ramanujan, RR). PDF file of the presented slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/pdf/Day6.pdf. Jupter-Notebook at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/ipynb/Day6.ipynb. 
 - _Tuesday_	From Neural Networks to Convolutional Neural Networks and how to analyze experiment (classification of events and real data)	(Michelle Kuchera, MK). Jupyter-notebook of lecture at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/ipynb/Day7.ipynb. 
@@ -102,7 +102,7 @@ The organization of a typical course day is as follows:
 
 _Time	and Activity_
 - 2pm-4pm	(Central European time=CET) Lectures, project relevant information and directed exercises
-- 5pm-6pm	(CET) Questions and answers, Computational projects, exercises and hands-on sessions
+- 4pm-5pm	(CET) Questions and answers, Computational projects, exercises and hands-on sessions
 
 ## Teachers and organizers
 The teachers and organizers are
