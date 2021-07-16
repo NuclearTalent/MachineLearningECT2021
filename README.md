@@ -74,22 +74,24 @@ The tentative (prone to revisions) lecture plan is as follows
 
 ### Week 1, July 19-23
 
-- _Monday_ Linear Regression and intro to statistical data analysis	(Morten Hjorth-Jensen MHJ). Learning slides at
-https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Introduction.html and https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/html/Day1.html
-- _Tuesday_	Logistic Regression and classification problems, intro to gradient methods	(MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/html/Day2.html
-- _Wednesday_	Decision Trees, Random Forests and Boosting methods (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/html/Day3.html
-- _Thursday_	Basics of Neural Networks and writing your own Neural Network code (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/html/Day4.html
-- _Friday_	Beta-decay experiments, how to analyze various events, with hands-on examples . (Sean Liddick) Videos and teaching material https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/html/Day5.html. 
+- _Monday, 2pm-4pm CET_ Linear Regression and intro to statistical data analysis	(Morten Hjorth-Jensen MHJ). Learning slides at
+https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction.html and https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1.html. 
+- _Tuesday, 2pm-4pm CET_	Logistic Regression and classification problems, intro to gradient methods	(MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/html/Day2.html
+- _Wednesday, 2pm-4pm CET_	Decision Trees, Random Forests and Boosting methods (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/html/Day3.html
+- _Thursday, 2pm-4pm CET_	Basics of Neural Networks and writing your own Neural Network code (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/html/Day4.html
+- _Friday, 2pm-4pm CET_	Beta-decay experiments, how to analyze various events, with hands-on examples . (Sean Liddick) Videos and teaching material https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/html/Day5.html. 
 
+Exercise sessions and project work follow from 4pm to 5pm CET every day.
 ### Week 2, July 26-30
 
-- _Monday_	Neural Networks and Deep Learning (Raghu Ramanujan, RR). PDF file of the presented slides at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/pdf/Day6.pdf. Jupter-Notebook at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/ipynb/Day6.ipynb. 
-- _Tuesday_	From Neural Networks to Convolutional Neural Networks and how to analyze experiment (classification of events and real data)	(Michelle Kuchera, MK). Jupyter-notebook of lecture at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/ipynb/Day7.ipynb. 
-- _Wednesday_	 Discussion of nuclear experiments and how to analyze data, presentation of simulated data from Active-Target Time-Projection Chamber (AT-TPC)	(Daniel Bazin). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/pdf/Day8.pdf. 
-- _Thursday_	Generative models (MK). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/pdf/Day9.pdf.
-Jupyter-notebook at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/ipynb/Day9.ipynb.
-- _Friday_	Reinforcement Learning (RR). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/pdf/Day10.pdf. Future directions in machine learning and summary of course. 
+- _Monday, 2pm-4pm CET_	 Neural Networks and Deep Learning (Raghu Ramanujan, RR). PDF file of the presented slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/pdf/Day6.pdf. Jupter-Notebook at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/ipynb/Day6.ipynb. 
+- _Tuesday, 2pm-4pm CET_	From Neural Networks to Convolutional Neural Networks and how to analyze experiment (classification of events and real data)	(Michelle Kuchera, MK). Jupyter-notebook of lecture at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/ipynb/Day7.ipynb. 
+- _Wednesday, 2pm-4pm CET_	 Discussion of nuclear experiments and how to analyze data, presentation of simulated data from Active-Target Time-Projection Chamber (AT-TPC)	(Daniel Bazin). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/pdf/Day8.pdf. 
+- _Thursday, 2pm-4pm CET_	Generative models (MK). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/pdf/Day9.pdf.
+Jupyter-notebook at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/ipynb/Day9.ipynb.
+- _Friday, 2pm-4pm CET_	Reinforcement Learning (RR). Slides of lectures (PDF) at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/pdf/Day10.pdf. Future directions in machine learning and summary of course. 
 
+Exercise sessions and project work follow from 4pm to 5pm CET every day.
 
 
 
@@ -124,7 +126,7 @@ The students are expected to have operating programming skills in programming, a
 Students who have not studied the above topics are expected to gain this knowledge prior to attendance. Additional modules for self-teaching will be provided in good time before the course begins
 
 ## Online Material:
-For more information, please go to https://github.com/NuclearTalent/MachineLearningECT or go to http://nucleartalent.github.io/MachineLearningECT/doc/web/course.html for better display of course material and topics to be covered.
+For more information, please go to https://github.com/NuclearTalent/MachineLearningECT2021 or go to http://nucleartalent.github.io/MachineLearningECT2021/doc/web/course.html for better display of course material and topics to be covered.
 Admission
 The target group is Master of Science students, PhD students and early post-doctoral fellows. Also senior staff can attend but they have to be self-supported.
 
