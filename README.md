@@ -75,7 +75,8 @@ The tentative (prone to revisions) lecture plan is as follows
 ### Week 1, July 19-23
 
 - _Monday, 2pm-4pm CET_ Linear Regression and intro to statistical data analysis	(Morten Hjorth-Jensen MHJ). Learning slides at
-https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction.html and https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1.html. 
+https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction.html and https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1.html.   Welcome by the director of the ECT* Prof. Gert Aarts at 4pm.
+
 - _Tuesday, 2pm-4pm CET_	Logistic Regression and classification problems, intro to gradient methods	(MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/html/Day2.html
 - _Wednesday, 2pm-4pm CET_	Decision Trees, Random Forests and Boosting methods (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/html/Day3.html
 - _Thursday, 2pm-4pm CET_	Basics of Neural Networks and writing your own Neural Network code (MHJ). Learning slides at https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/html/Day4.html
