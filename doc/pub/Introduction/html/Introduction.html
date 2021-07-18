@@ -1,11 +1,11 @@
 <!--
 Automatically generated HTML file from DocOnce source
-(https://github.com/hplgit/doconce/)
+(https://github.com/doconce/doconce/)
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Nuclear Talent course  on Machine Learning in Nuclear Experiment and Theory">
 
@@ -53,10 +53,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
 
 div { text-align: justify; text-justify: inter-word; }
 </style>
@@ -66,117 +66,213 @@ div { text-align: justify; text-justify: inter-word; }
 
 <!-- tocinfo
 {'highest level': 2,
- 'sections': [('Introduction', 2, None, '___sec0'),
-              ('Overview of these introductory notes', 2, None, '___sec1'),
-              ('Machine Learning, short overview', 2, None, '___sec2'),
+ 'sections': [('Introduction', 2, None, 'introduction'),
+              ('Overview of these introductory notes',
+               2,
+               None,
+               'overview-of-these-introductory-notes'),
+              ('Machine Learning, short overview',
+               2,
+               None,
+               'machine-learning-short-overview'),
               ('Machine Learning, a small (and probably biased) introduction',
                2,
                None,
-               '___sec3'),
-              ('Machine Learning, an extremely rich field', 2, None, '___sec4'),
-              ('A multidisciplinary approach', 2, None, '___sec5'),
-              ('Learning outcomes', 2, None, '___sec6'),
-              ('Types of Machine Learning', 2, None, '___sec7'),
-              ('Essential elements of ML', 2, None, '___sec8'),
-              ('An optimization/minimization problem', 2, None, '___sec9'),
-              ('A Frequentist approach to data analysis', 2, None, '___sec10'),
-              ('What is a good model?', 2, None, '___sec11'),
-              ('What is a good model? Can we define it?', 2, None, '___sec12'),
+               'machine-learning-a-small-and-probably-biased-introduction'),
+              ('Machine Learning, an extremely rich field',
+               2,
+               None,
+               'machine-learning-an-extremely-rich-field'),
+              ('A multidisciplinary approach',
+               2,
+               None,
+               'a-multidisciplinary-approach'),
+              ('Learning outcomes', 2, None, 'learning-outcomes'),
+              ('Types of Machine Learning',
+               2,
+               None,
+               'types-of-machine-learning'),
+              ('Essential elements of ML', 2, None, 'essential-elements-of-ml'),
+              ('An optimization/minimization problem',
+               2,
+               None,
+               'an-optimization-minimization-problem'),
+              ('A Frequentist approach to data analysis',
+               2,
+               None,
+               'a-frequentist-approach-to-data-analysis'),
+              ('What is a good model?', 2, None, 'what-is-a-good-model'),
+              ('What is a good model? Can we define it?',
+               2,
+               None,
+               'what-is-a-good-model-can-we-define-it'),
               ('Practicalities, choice of programming language and other '
                'computational issues',
                2,
                None,
-               '___sec13'),
-              ('Choice of Programming Language', 2, None, '___sec14'),
-              ('Software and needed installations', 2, None, '___sec15'),
-              ('Python installers', 2, None, '___sec16'),
-              ('Useful Python libraries', 2, None, '___sec17'),
-              ('More Practicalities, handling arrays', 2, None, '___sec18'),
+               'practicalities-choice-of-programming-language-and-other-computational-issues'),
+              ('Choice of Programming Language',
+               2,
+               None,
+               'choice-of-programming-language'),
+              ('Software and needed installations',
+               2,
+               None,
+               'software-and-needed-installations'),
+              ('Python installers', 2, None, 'python-installers'),
+              ('Useful Python libraries', 2, None, 'useful-python-libraries'),
+              ('More Practicalities, handling arrays',
+               2,
+               None,
+               'more-practicalities-handling-arrays'),
               ('Basic Matrix Features, Numpy examples and Important Matrix and '
                'vector handling packages',
                2,
                None,
-               '___sec19'),
-              ('Some famous Matrices', 2, None, '___sec20'),
-              ('More Basic Matrix Features', 2, None, '___sec21'),
-              ('Numpy and arrays', 2, None, '___sec22'),
-              ('More Examples', 2, None, '___sec23'),
-              ('Matrices in Python', 2, None, '___sec24'),
-              ('More Examples, Covariance matrix', 2, None, '___sec25'),
-              ('More on the Covariance Matrix', 2, None, '___sec26'),
-              ('Practicalities, Reminder on Statistics', 2, None, '___sec27'),
-              ('Brief Reminder on Statistical Analysis', 2, None, '___sec28'),
-              ('Statistics, moments', 2, None, '___sec29'),
-              ('Statistics, central moments', 2, None, '___sec30'),
-              ('Statistics, covariance', 2, None, '___sec31'),
-              ('Statistics, more covariance', 2, None, '___sec32'),
-              ('Statistics, independent variables', 2, None, '___sec33'),
-              ('Statistics, more variance', 2, None, '___sec34'),
-              ('Statistics and stochastic processes', 2, None, '___sec35'),
-              ('Statistics and sample variables', 2, None, '___sec36'),
+               'basic-matrix-features-numpy-examples-and-important-matrix-and-vector-handling-packages'),
+              ('Some famous Matrices', 2, None, 'some-famous-matrices'),
+              ('More Basic Matrix Features',
+               2,
+               None,
+               'more-basic-matrix-features'),
+              ('Numpy and arrays', 2, None, 'numpy-and-arrays'),
+              ('More Examples', 2, None, 'more-examples'),
+              ('Matrices in Python', 2, None, 'matrices-in-python'),
+              ('More Examples, Covariance matrix',
+               2,
+               None,
+               'more-examples-covariance-matrix'),
+              ('More on the Covariance Matrix',
+               2,
+               None,
+               'more-on-the-covariance-matrix'),
+              ('Practicalities, Reminder on Statistics',
+               2,
+               None,
+               'practicalities-reminder-on-statistics'),
+              ('Brief Reminder on Statistical Analysis',
+               2,
+               None,
+               'brief-reminder-on-statistical-analysis'),
+              ('Statistics, moments', 2, None, 'statistics-moments'),
+              ('Statistics, central moments',
+               2,
+               None,
+               'statistics-central-moments'),
+              ('Statistics, covariance', 2, None, 'statistics-covariance'),
+              ('Statistics, more covariance',
+               2,
+               None,
+               'statistics-more-covariance'),
+              ('Statistics, independent variables',
+               2,
+               None,
+               'statistics-independent-variables'),
+              ('Statistics, more variance',
+               2,
+               None,
+               'statistics-more-variance'),
+              ('Statistics and stochastic processes',
+               2,
+               None,
+               'statistics-and-stochastic-processes'),
+              ('Statistics and sample variables',
+               2,
+               None,
+               'statistics-and-sample-variables'),
               ('Statistics, sample variance and covariance',
                2,
                None,
-               '___sec37'),
-              ('Statistics, law of large numbers', 2, None, '___sec38'),
-              ('Statistics, more on sample error', 2, None, '___sec39'),
-              ('Statistics', 2, None, '___sec40'),
-              ('Statistics, central limit theorem', 2, None, '___sec41'),
-              ('Covariance example', 2, None, '___sec42'),
-              ('Covariance in numpy', 2, None, '___sec43'),
-              ('Practicalities, Useful Python Packages', 2, None, '___sec44'),
-              ('Meet the Pandas', 2, None, '___sec45'),
-              ('Data Frames in Pandas', 2, None, '___sec46'),
-              ('More  Pandas', 2, None, '___sec47'),
-              ('Pandas Series', 2, None, '___sec48'),
-              ('Our first Machine Learning Encounter', 2, None, '___sec49'),
-              ('Reading Data and Fitting', 2, None, '___sec50'),
+               'statistics-sample-variance-and-covariance'),
+              ('Statistics, law of large numbers',
+               2,
+               None,
+               'statistics-law-of-large-numbers'),
+              ('Statistics, more on sample error',
+               2,
+               None,
+               'statistics-more-on-sample-error'),
+              ('Statistics', 2, None, 'statistics'),
+              ('Statistics, central limit theorem',
+               2,
+               None,
+               'statistics-central-limit-theorem'),
+              ('Covariance example', 2, None, 'covariance-example'),
+              ('Covariance in numpy', 2, None, 'covariance-in-numpy'),
+              ('Practicalities, Useful Python Packages',
+               2,
+               None,
+               'practicalities-useful-python-packages'),
+              ('Meet the Pandas', 2, None, 'meet-the-pandas'),
+              ('Data Frames in Pandas', 2, None, 'data-frames-in-pandas'),
+              ('More  Pandas', 2, None, 'more-pandas'),
+              ('Pandas Series', 2, None, 'pandas-series'),
+              ('Our first Machine Learning Encounter',
+               2,
+               None,
+               'our-first-machine-learning-encounter'),
+              ('Reading Data and Fitting', 2, None, 'reading-data-and-fitting'),
               ('Simple linear regression model using _scikit-learn_',
                2,
                None,
-               '___sec51'),
+               'simple-linear-regression-model-using-_scikit-learn_'),
               ('Simple linear regression model using _scikit-learn_, Numpy '
                'functions',
                2,
                None,
-               '___sec52'),
+               'simple-linear-regression-model-using-_scikit-learn_-numpy-functions'),
               ('Simple linear regression model using _scikit-learn_, '
                'Matplotlib',
                2,
                None,
-               '___sec53'),
+               'simple-linear-regression-model-using-_scikit-learn_-matplotlib'),
               ('Simple linear regression model, what to expect',
                2,
                None,
-               '___sec54'),
+               'simple-linear-regression-model-what-to-expect'),
               ('Simple linear regression model, how to evaluate the model',
                2,
                None,
-               '___sec55'),
-              ('Our first Cost/Loss function encounter', 2, None, '___sec56'),
-              ('Our first Cost/Loss function encounter', 2, None, '___sec57'),
+               'simple-linear-regression-model-how-to-evaluate-the-model'),
+              ('Our first Cost/Loss function encounter',
+               2,
+               None,
+               'our-first-cost-loss-function-encounter'),
+              ('Our first Cost/Loss function encounter',
+               2,
+               None,
+               'our-first-cost-loss-function-encounter'),
               ('Our first Cost/Loss function encounter, how do we define them?',
                2,
                None,
-               '___sec58'),
-              ('_Scikit-Learn_ functionality', 2, None, '___sec59'),
-              ('Cubic Polynomial', 2, None, '___sec60'),
+               'our-first-cost-loss-function-encounter-how-do-we-define-them'),
+              ('_Scikit-Learn_ functionality',
+               2,
+               None,
+               '_scikit-learn_-functionality'),
+              ('Cubic Polynomial', 2, None, 'cubic-polynomial'),
               ('Getting more serious, fitting Nuclear Binding Energies',
                2,
                None,
-               '___sec61'),
+               'getting-more-serious-fitting-nuclear-binding-energies'),
               ('To our real data: nuclear binding energies. Brief reminder on '
                'masses and binding energies',
                2,
                None,
-               '___sec62'),
-              ('Organizing our data', 3, None, '___sec63'),
-              ('Seeing the wood for the trees', 3, None, '___sec64'),
-              ('And what about using neural networks?', 3, None, '___sec65'),
+               'to-our-real-data-nuclear-binding-energies-brief-reminder-on-masses-and-binding-energies'),
+              ('Organizing our data', 3, None, 'organizing-our-data'),
+              ('Seeing the wood for the trees',
+               3,
+               None,
+               'seeing-the-wood-for-the-trees'),
+              ('And what about using neural networks?',
+               3,
+               None,
+               'and-what-about-using-neural-networks'),
               ('More on flexibility with pandas and xarray',
                2,
                None,
-               '___sec66')]}
+               'more-on-flexibility-with-pandas-and-xarray')]}
 end of tocinfo -->
 
 <body>
@@ -237,12 +333,12 @@ MathJax.Hub.Config({
 <center>[5] <b>Department of Mathematics and Computer Science, Davidson College, Davidson, North Carolina, USA</b></center>
 <br>
 <p>
-<center><h4>Jun 26, 2020</h4></center> <!-- date -->
+<center><h4>Jul 18, 2021</h4></center> <!-- date -->
 <br>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec0">Introduction </h2>
+<h2 id="introduction">Introduction </h2>
 
 <p>
 During the last two decades there has been a swift and amazing
@@ -268,7 +364,7 @@ Sciences.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec1">Overview of these introductory notes </h2>
+<h2 id="overview-of-these-introductory-notes">Overview of these introductory notes </h2>
 
 <p>
 The aim of these notes is to give you a birds view over overarching issues on  Machine Learning, a brief review of programming with Python and libraries we will use in this course, a reminder on statistics and finally our first encounters of Machine Learning methods applied to an evergreen in Nuclear Physics, fitting nuclear binding energies.
@@ -294,12 +390,12 @@ After these introductory words, the set of lectures will contain the following t
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec2">Machine Learning, short overview  </h2>
+<h2 id="machine-learning-short-overview">Machine Learning, short overview  </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec3">Machine Learning, a small (and probably biased) introduction  </h2>
+<h2 id="machine-learning-a-small-and-probably-biased-introduction">Machine Learning, a small (and probably biased) introduction  </h2>
 
 <p>
 Ideally, machine learning represents the science of giving computers
@@ -315,7 +411,7 @@ role when we develop a specific machine learning algorithm.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec4">Machine Learning, an extremely rich field  </h2>
+<h2 id="machine-learning-an-extremely-rich-field">Machine Learning, an extremely rich field  </h2>
 
 <p>
 Machine learning is an extremely rich field, in spite of its young
@@ -335,7 +431,7 @@ code developers and contributors keeps increasing.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec5">A multidisciplinary approach </h2>
+<h2 id="a-multidisciplinary-approach">A multidisciplinary approach </h2>
 
 <p>
 Not all the
@@ -350,7 +446,7 @@ of the algorithms and methods we will discuss.
 <p>
 <!-- !split  -->
 
-<h2 id="___sec6">Learning outcomes </h2>
+<h2 id="learning-outcomes">Learning outcomes </h2>
 
 <p>
 These sets of lectures aim at giving you an overview of central aspects of
@@ -383,7 +479,7 @@ More specifically, you will
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec7">Types of Machine Learning </h2>
+<h2 id="types-of-machine-learning">Types of Machine Learning </h2>
 
 <p>
 The approaches to machine learning are many, but are often split into
@@ -414,7 +510,7 @@ desired output of a system.  Some of the most common tasks are:
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec8">Essential elements of ML </h2>
+<h2 id="essential-elements-of-ml">Essential elements of ML </h2>
 
 <p>
 The methods we cover have three main topics in common, irrespective of
@@ -432,7 +528,7 @@ whether we deal with supervised or unsupervised learning.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec9">An optimization/minimization problem </h2>
+<h2 id="an-optimization-minimization-problem">An optimization/minimization problem </h2>
 
 <p>
 At the heart of basically all Machine Learning algorithms we will encounter so-called minimization or optimization algorithms. A large family of such methods are so-called <b>gradient methods</b>.
@@ -440,7 +536,7 @@ At the heart of basically all Machine Learning algorithms we will encounter so-c
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec10">A Frequentist approach to data analysis  </h2>
+<h2 id="a-frequentist-approach-to-data-analysis">A Frequentist approach to data analysis  </h2>
 
 <p>
 When you hear phrases like <b>predictions and estimations</b> and
@@ -473,7 +569,7 @@ what is the likelihood of finding \( B \).
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec11">What is a good model? </h2>
+<h2 id="what-is-a-good-model">What is a good model? </h2>
 
 <p>
 In science and engineering we often end up in situations where we want to infer (or learn) a
@@ -503,7 +599,7 @@ could easily be many different models that fit the given data set <em>equally we
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec12">What is a good model? Can we define it?  </h2>
+<h2 id="what-is-a-good-model-can-we-define-it">What is a good model? Can we define it?  </h2>
 
 <p>
 The central question is this: what leads us to say that a model is correct or
@@ -532,12 +628,12 @@ How to evaluate which model fits best the data is something we will come back to
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec13">Practicalities, choice of programming language and other computational issues </h2>
+<h2 id="practicalities-choice-of-programming-language-and-other-computational-issues">Practicalities, choice of programming language and other computational issues </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec14">Choice of Programming Language </h2>
+<h2 id="choice-of-programming-language">Choice of Programming Language </h2>
 
 <p>
 Python plays nowadays a central role in the development of machine
@@ -556,7 +652,7 @@ algorithms either as a Python codes or C++ or Fortran (or other languages) codes
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec15">Software and needed installations </h2>
+<h2 id="software-and-needed-installations">Software and needed installations </h2>
 
 <p>
 We will make extensive use of Python as programming language and its
@@ -596,7 +692,7 @@ etc etc.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec16">Python installers </h2>
+<h2 id="python-installers">Python installers </h2>
 
 <p>
 If you don't want to perform these operations separately and venture
@@ -630,7 +726,7 @@ no setup and runs entirely in the cloud. Try it out!
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec17">Useful Python libraries </h2>
+<h2 id="useful-python-libraries">Useful Python libraries </h2>
 Here we list several useful Python libraries we strongly recommend (if you use anaconda many of these are already there)
 
 <ul>
@@ -649,16 +745,16 @@ Here we list several useful Python libraries we strongly recommend (if you use a
 
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec18">More Practicalities, handling arrays </h2>
+<h2 id="more-practicalities-handling-arrays">More Practicalities, handling arrays </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec19">Basic Matrix Features, Numpy examples and Important Matrix and vector handling packages  </h2>
+<h2 id="basic-matrix-features-numpy-examples-and-important-matrix-and-vector-handling-packages">Basic Matrix Features, Numpy examples and Important Matrix and vector handling packages  </h2>
 
 <p>
 <div class="alert alert-block alert-block alert-text-normal">
-<b>Matrix properties reminder.</b>
+<b>Matrix properties reminder</b>
 <p>
 $$
  \mathbf{A} =
@@ -702,7 +798,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec20">Some famous Matrices </h2>
+<h2 id="some-famous-matrices">Some famous Matrices </h2>
 
 <ul>
   <li> Diagonal if \( a_{ij}=0 \) for \( i\ne j \)</li>
@@ -718,11 +814,11 @@ $$
 
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec21">More Basic Matrix Features </h2>
+<h2 id="more-basic-matrix-features">More Basic Matrix Features </h2>
 
 <p>
 <div class="alert alert-block alert-block alert-text-normal">
-<b>Some Equivalent Statements.</b>
+<b>Some Equivalent Statements</b>
 <p>
 For an \( N\times N \) matrix  \( \mathbf{A} \) the following properties are all equivalent
 
@@ -740,22 +836,22 @@ For an \( N\times N \) matrix  \( \mathbf{A} \) the following properties are all
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec22">Numpy and arrays </h2>
+<h2 id="numpy-and-arrays">Numpy and arrays </h2>
 <a href="http://www.numpy.org/" target="_blank">Numpy</a> provides an easy way to handle arrays in Python. The standard way to import this library is as
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 </pre></div>
 <p>
 Here follows a simple example where we set up an array of ten elements, all determined by random numbers drawn according to the normal distribution,
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>n <span style="color: #666666">=</span> <span style="color: #666666">10</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>n <span style="color: #666666">=</span> <span style="color: #666666">10</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 We defined a vector \( x \) with \( n=10 \) elements with its values given by the Normal distribution \( N(0,1) \).
@@ -763,9 +859,9 @@ Another alternative is to declare a vector as follows
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span>])
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 Here we have defined a vector with three elements, with \( x_0=1 \), \( x_1=2 \) and \( x_2=3 \). Note that both Python and C++
@@ -773,14 +869,14 @@ start numbering array elements from \( 0 \) and on. This means that a vector wit
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([<span style="color: #666666">4</span>, <span style="color: #666666">7</span>, <span style="color: #666666">8</span>]))
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec23">More Examples </h2>
+<h2 id="more-examples">More Examples </h2>
 
 <p>
 In the last example we used Numpy's unary function \( np.log \). This function is
@@ -794,12 +890,12 @@ logarithms of a vector would be to write
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> log
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">4</span>, <span style="color: #666666">7</span>, <span style="color: #666666">8</span>])
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">0</span>, <span style="color: #008000">len</span>(x)):
     x[i] <span style="color: #666666">=</span> log(x[i])
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 We note that our code is much longer already and we need to import the <b>log</b> function from the <b>math</b> module. 
@@ -807,32 +903,32 @@ The attentive reader will also notice that the output is \( [1, 1, 2] \). Python
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([<span style="color: #666666">4</span>, <span style="color: #666666">7</span>, <span style="color: #666666">8</span>], dtype <span style="color: #666666">=</span> np<span style="color: #666666">.</span>float64))
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 or simply write them as double precision numbers (Python uses 64 bits as default for floating point type variables), that is
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([<span style="color: #666666">4.0</span>, <span style="color: #666666">7.0</span>, <span style="color: #666666">8.0</span>])
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 To check the number of bytes (remember that one byte contains eight bits for double precision variables), you can use simple use the <b>itemsize</b> functionality (the array \( x \) is actually an object which inherits the functionalities defined in Numpy) as 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([<span style="color: #666666">4.0</span>, <span style="color: #666666">7.0</span>, <span style="color: #666666">8.0</span>]))
-<span style="color: #008000; font-weight: bold">print</span>(x)
+<span style="color: #008000">print</span>(x)
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec24">Matrices in Python </h2>
+<h2 id="matrices-in-python">Matrices in Python </h2>
 
 <p>
 Having defined vectors, we are now ready to try out matrices. We can
@@ -842,67 +938,67 @@ lowercase letters for vectors and uppercase letters for matrices)
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([ [<span style="color: #666666">4.0</span>, <span style="color: #666666">7.0</span>, <span style="color: #666666">8.0</span>], [<span style="color: #666666">3.0</span>, <span style="color: #666666">10.0</span>, <span style="color: #666666">11.0</span>], [<span style="color: #666666">4.0</span>, <span style="color: #666666">5.0</span>, <span style="color: #666666">7.0</span>] ]))
-<span style="color: #008000; font-weight: bold">print</span>(A)
+<span style="color: #008000">print</span>(A)
 </pre></div>
 <p>
 If we use the <b>shape</b> function we would get \( (3, 3) \) as output, that is verifying that our matrix is a \( 3\times 3 \) matrix. We can slice the matrix and print for example the first column (Python organized matrix elements in a row-major order, see below) as
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([ [<span style="color: #666666">4.0</span>, <span style="color: #666666">7.0</span>, <span style="color: #666666">8.0</span>], [<span style="color: #666666">3.0</span>, <span style="color: #666666">10.0</span>, <span style="color: #666666">11.0</span>], [<span style="color: #666666">4.0</span>, <span style="color: #666666">5.0</span>, <span style="color: #666666">7.0</span>] ]))
 <span style="color: #408080; font-style: italic"># print the first column, row-major order and elements start with 0</span>
-<span style="color: #008000; font-weight: bold">print</span>(A[:,<span style="color: #666666">0</span>]) 
+<span style="color: #008000">print</span>(A[:,<span style="color: #666666">0</span>]) 
 </pre></div>
 <p>
 We can continue this was by printing out other columns or rows. The example here prints out the second column
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>log(np<span style="color: #666666">.</span>array([ [<span style="color: #666666">4.0</span>, <span style="color: #666666">7.0</span>, <span style="color: #666666">8.0</span>], [<span style="color: #666666">3.0</span>, <span style="color: #666666">10.0</span>, <span style="color: #666666">11.0</span>], [<span style="color: #666666">4.0</span>, <span style="color: #666666">5.0</span>, <span style="color: #666666">7.0</span>] ]))
 <span style="color: #408080; font-style: italic"># print the first column, row-major order and elements start with 0</span>
-<span style="color: #008000; font-weight: bold">print</span>(A[<span style="color: #666666">1</span>,:]) 
+<span style="color: #008000">print</span>(A[<span style="color: #666666">1</span>,:]) 
 </pre></div>
 <p>
 Numpy contains many other functionalities that allow us to slice, subdivide etc etc arrays. We strongly recommend that you look up the <a href="http://www.numpy.org/" target="_blank">Numpy website for more details</a>. Useful functions when defining a matrix are the <b>np.zeros</b> function which declares a matrix of a given dimension and sets all elements to zero
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 n <span style="color: #666666">=</span> <span style="color: #666666">10</span>
 <span style="color: #408080; font-style: italic"># define a matrix of dimension 10 x 10 and set all elements to zero</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros( (n, n) )
-<span style="color: #008000; font-weight: bold">print</span>(A) 
+<span style="color: #008000">print</span>(A) 
 </pre></div>
 <p>
 or initializing all elements to 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 n <span style="color: #666666">=</span> <span style="color: #666666">10</span>
 <span style="color: #408080; font-style: italic"># define a matrix of dimension 10 x 10 and set all elements to one</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>ones( (n, n) )
-<span style="color: #008000; font-weight: bold">print</span>(A) 
+<span style="color: #008000">print</span>(A) 
 </pre></div>
 <p>
 or as unitarily distributed random numbers (see the material on random number generators in the statistics part)
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 n <span style="color: #666666">=</span> <span style="color: #666666">10</span>
 <span style="color: #408080; font-style: italic"># define a matrix of dimension 10 x 10 and set all elements to random numbers with x \in [0, 1]</span>
 A <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(n, n)
-<span style="color: #008000; font-weight: bold">print</span>(A) 
+<span style="color: #008000">print</span>(A) 
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec25">More Examples, Covariance matrix </h2>
+<h2 id="more-examples-covariance-matrix">More Examples, Covariance matrix </h2>
 
 <p>
 As we will see throughout these lectures, there are several extremely useful functionalities in Numpy.
@@ -935,7 +1031,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec26">More on the Covariance Matrix </h2>
+<h2 id="more-on-the-covariance-matrix">More on the Covariance Matrix </h2>
 
 <p>
 Our matrix is in turn converted into into the \( 3\times 3 \) covariance matrix
@@ -947,31 +1043,31 @@ covariance matrix through the <b>np.linalg.eig()</b> function.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 
 n <span style="color: #666666">=</span> <span style="color: #666666">100</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(x))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(x))
 y <span style="color: #666666">=</span> <span style="color: #666666">4+3*</span>x<span style="color: #666666">+</span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(y))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(y))
 z <span style="color: #666666">=</span> x<span style="color: #666666">**3+</span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(z))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(z))
 W <span style="color: #666666">=</span> np<span style="color: #666666">.</span>vstack((x, y, z))
 Sigma <span style="color: #666666">=</span> np<span style="color: #666666">.</span>cov(W)
-<span style="color: #008000; font-weight: bold">print</span>(Sigma)
+<span style="color: #008000">print</span>(Sigma)
 Eigvals, Eigvecs <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>eig(Sigma)
-<span style="color: #008000; font-weight: bold">print</span>(Eigvals)
+<span style="color: #008000">print</span>(Eigvals)
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec27">Practicalities, Reminder on Statistics  </h2>
+<h2 id="practicalities-reminder-on-statistics">Practicalities, Reminder on Statistics  </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec28">Brief Reminder on Statistical Analysis </h2>
+<h2 id="brief-reminder-on-statistical-analysis">Brief Reminder on Statistical Analysis </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1002,7 +1098,7 @@ selection of a large set of these numbers reproduces this PDF.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec29">Statistics, moments </h2>
+<h2 id="statistics-moments">Statistics, moments </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1025,7 +1121,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec30">Statistics, central moments </h2>
+<h2 id="statistics-central-moments">Statistics, central moments </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1063,7 +1159,7 @@ qualitatively as the <em>spread</em> of \( p \) around its mean.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec31">Statistics, covariance </h2>
+<h2 id="statistics-covariance">Statistics, covariance </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1094,7 +1190,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec32">Statistics, more covariance  </h2>
+<h2 id="statistics-more-covariance">Statistics, more covariance  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1126,7 +1222,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec33">Statistics, independent variables  </h2>
+<h2 id="statistics-independent-variables">Statistics, independent variables  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1141,7 +1237,7 @@ We normally use the acronym <b>iid</b> for independent and identically distribut
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec34">Statistics, more variance  </h2>
+<h2 id="statistics-more-variance">Statistics, more variance  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1173,7 +1269,7 @@ value of a set of measurements.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec35">Statistics and stochastic processes  </h2>
+<h2 id="statistics-and-stochastic-processes">Statistics and stochastic processes  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1201,7 +1297,7 @@ interested in finding the few lowest moments, like the mean
 <p>
 <!-- !split  -->
 
-<h2 id="___sec36">Statistics and sample variables  </h2>
+<h2 id="statistics-and-sample-variables">Statistics and sample variables  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1227,7 +1323,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec37">Statistics, sample variance and covariance </h2>
+<h2 id="statistics-sample-variance-and-covariance">Statistics, sample variance and covariance </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1248,7 +1344,7 @@ and covariance \( \mathrm{cov}(X,Y) \).
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec38">Statistics, law of large numbers </h2>
+<h2 id="statistics-law-of-large-numbers">Statistics, law of large numbers </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1280,7 +1376,7 @@ true PDFs behind, which we usually do not have.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec39">Statistics, more on sample error </h2>
+<h2 id="statistics-more-on-sample-error">Statistics, more on sample error </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1302,7 +1398,7 @@ means.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec40">Statistics  </h2>
+<h2 id="statistics">Statistics  </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1323,7 +1419,7 @@ And in particular we are interested in its variance \( \mathrm{var}(\overline X_
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec41">Statistics, central limit theorem </h2>
+<h2 id="statistics-central-limit-theorem">Statistics, central limit theorem </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -1348,7 +1444,7 @@ $$
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec42">Covariance example </h2>
+<h2 id="covariance-example">Covariance example </h2>
 
 <p>
 Suppose we have defined three vectors \( \boldsymbol{x}, \boldsymbol{y}, \boldsymbol{z} \) with
@@ -1397,34 +1493,34 @@ function.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec43">Covariance in numpy </h2>
+<h2 id="covariance-in-numpy">Covariance in numpy </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 
 n <span style="color: #666666">=</span> <span style="color: #666666">100</span>
 x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(x))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(x))
 y <span style="color: #666666">=</span> <span style="color: #666666">4+3*</span>x<span style="color: #666666">+</span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(y))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(y))
 z <span style="color: #666666">=</span> x<span style="color: #666666">**3+</span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>normal(size<span style="color: #666666">=</span>n)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean(z))
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean(z))
 W <span style="color: #666666">=</span> np<span style="color: #666666">.</span>vstack((x, y, z))
 Sigma <span style="color: #666666">=</span> np<span style="color: #666666">.</span>cov(W)
-<span style="color: #008000; font-weight: bold">print</span>(Sigma)
+<span style="color: #008000">print</span>(Sigma)
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec44">Practicalities, Useful Python Packages </h2>
+<h2 id="practicalities-useful-python-packages">Practicalities, Useful Python Packages </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec45">Meet the Pandas </h2>
+<h2 id="meet-the-pandas">Meet the Pandas </h2>
 
 <p>
 <br /><br /><center><p><img src="fig/pandas.jpg" align="bottom" width=600></p></center><br /><br />
@@ -1443,7 +1539,7 @@ The following simple example shows how we can, in an easy way make tables of our
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">IPython.display</span> <span style="color: #008000; font-weight: bold">import</span> display
 data <span style="color: #666666">=</span> {<span style="color: #BA2121">&#39;First Name&#39;</span>: [<span style="color: #BA2121">&quot;Frodo&quot;</span>, <span style="color: #BA2121">&quot;Bilbo&quot;</span>, <span style="color: #BA2121">&quot;Aragorn II&quot;</span>, <span style="color: #BA2121">&quot;Samwise&quot;</span>],
         <span style="color: #BA2121">&#39;Last Name&#39;</span>: [<span style="color: #BA2121">&quot;Baggins&quot;</span>, <span style="color: #BA2121">&quot;Baggins&quot;</span>,<span style="color: #BA2121">&quot;Elessar&quot;</span>,<span style="color: #BA2121">&quot;Gamgee&quot;</span>],
@@ -1456,7 +1552,7 @@ display(data_pandas)
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec46">Data Frames in Pandas </h2>
+<h2 id="data-frames-in-pandas">Data Frames in Pandas </h2>
 
 <p>
 In the above we have imported <b>pandas</b> with the shorthand <b>pd</b>, the latter has become the standard way we import <b>pandas</b>. We make then a list of various variables
@@ -1466,7 +1562,7 @@ Displaying these results, we see that the indices are given by the default numbe
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>data_pandas <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(data,index<span style="color: #666666">=</span>[<span style="color: #BA2121">&#39;Frodo&#39;</span>,<span style="color: #BA2121">&#39;Bilbo&#39;</span>,<span style="color: #BA2121">&#39;Aragorn&#39;</span>,<span style="color: #BA2121">&#39;Sam&#39;</span>])
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>data_pandas <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(data,index<span style="color: #666666">=</span>[<span style="color: #BA2121">&#39;Frodo&#39;</span>,<span style="color: #BA2121">&#39;Bilbo&#39;</span>,<span style="color: #BA2121">&#39;Aragorn&#39;</span>,<span style="color: #BA2121">&#39;Sam&#39;</span>])
 display(data_pandas)
 </pre></div>
 <p>
@@ -1474,14 +1570,14 @@ Thereafter we display the content of the row which begins with the index <b>Arag
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>display(data_pandas<span style="color: #666666">.</span>loc[<span style="color: #BA2121">&#39;Aragorn&#39;</span>])
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>display(data_pandas<span style="color: #666666">.</span>loc[<span style="color: #BA2121">&#39;Aragorn&#39;</span>])
 </pre></div>
 <p>
 We can easily append data to this, for example
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>new_hobbit <span style="color: #666666">=</span> {<span style="color: #BA2121">&#39;First Name&#39;</span>: [<span style="color: #BA2121">&quot;Peregrin&quot;</span>],
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>new_hobbit <span style="color: #666666">=</span> {<span style="color: #BA2121">&#39;First Name&#39;</span>: [<span style="color: #BA2121">&quot;Peregrin&quot;</span>],
               <span style="color: #BA2121">&#39;Last Name&#39;</span>: [<span style="color: #BA2121">&quot;Took&quot;</span>],
               <span style="color: #BA2121">&#39;Place of birth&#39;</span>: [<span style="color: #BA2121">&quot;Shire&quot;</span>],
               <span style="color: #BA2121">&#39;Date of Birth T.A.&#39;</span>: [<span style="color: #666666">2990</span>]
@@ -1492,7 +1588,7 @@ display(data_pandas)
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec47">More  Pandas </h2>
+<h2 id="more-pandas">More  Pandas </h2>
 
 <p>
 Here are other examples where we use the <b>DataFrame</b> functionality to handle arrays, now with more interesting features for us, namely numbers. We set up a matrix 
@@ -1500,7 +1596,7 @@ of dimensionality \( 10\times 5 \) and compute the mean value and standard devia
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">IPython.display</span> <span style="color: #008000; font-weight: bold">import</span> display
 np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>seed(<span style="color: #666666">100</span>)
@@ -1510,8 +1606,8 @@ cols <span style="color: #666666">=</span> <span style="color: #666666">5</span>
 a <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>randn(rows,cols)
 df <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(a)
 display(df)
-<span style="color: #008000; font-weight: bold">print</span>(df<span style="color: #666666">.</span>mean())
-<span style="color: #008000; font-weight: bold">print</span>(df<span style="color: #666666">.</span>std())
+<span style="color: #008000">print</span>(df<span style="color: #666666">.</span>mean())
+<span style="color: #008000">print</span>(df<span style="color: #666666">.</span>std())
 display(df<span style="color: #666666">**2</span>)
 </pre></div>
 <p>
@@ -1519,13 +1615,13 @@ Thereafter we can select specific columns only and plot final results
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>df<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;First&#39;</span>, <span style="color: #BA2121">&#39;Second&#39;</span>, <span style="color: #BA2121">&#39;Third&#39;</span>, <span style="color: #BA2121">&#39;Fourth&#39;</span>, <span style="color: #BA2121">&#39;Fifth&#39;</span>]
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>df<span style="color: #666666">.</span>columns <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;First&#39;</span>, <span style="color: #BA2121">&#39;Second&#39;</span>, <span style="color: #BA2121">&#39;Third&#39;</span>, <span style="color: #BA2121">&#39;Fourth&#39;</span>, <span style="color: #BA2121">&#39;Fifth&#39;</span>]
 df<span style="color: #666666">.</span>index <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">10</span>)
 
 display(df)
-<span style="color: #008000; font-weight: bold">print</span>(df[<span style="color: #BA2121">&#39;Second&#39;</span>]<span style="color: #666666">.</span>mean() )
-<span style="color: #008000; font-weight: bold">print</span>(df<span style="color: #666666">.</span>info())
-<span style="color: #008000; font-weight: bold">print</span>(df<span style="color: #666666">.</span>describe())
+<span style="color: #008000">print</span>(df[<span style="color: #BA2121">&#39;Second&#39;</span>]<span style="color: #666666">.</span>mean() )
+<span style="color: #008000">print</span>(df<span style="color: #666666">.</span>info())
+<span style="color: #008000">print</span>(df<span style="color: #666666">.</span>describe())
 
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">pylab</span> <span style="color: #008000; font-weight: bold">import</span> plt, mpl
 plt<span style="color: #666666">.</span>style<span style="color: #666666">.</span>use(<span style="color: #BA2121">&#39;seaborn&#39;</span>)
@@ -1543,10 +1639,10 @@ We can produce a \( 4\times 4 \) matrix
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>b <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">16</span>)<span style="color: #666666">.</span>reshape((<span style="color: #666666">4</span>,<span style="color: #666666">4</span>))
-<span style="color: #008000; font-weight: bold">print</span>(b)
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>b <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">16</span>)<span style="color: #666666">.</span>reshape((<span style="color: #666666">4</span>,<span style="color: #666666">4</span>))
+<span style="color: #008000">print</span>(b)
 df1 <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>DataFrame(b)
-<span style="color: #008000; font-weight: bold">print</span>(df1)
+<span style="color: #008000">print</span>(df1)
 </pre></div>
 <p>
 and many other operations.
@@ -1554,7 +1650,7 @@ and many other operations.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec48">Pandas Series </h2>
+<h2 id="pandas-series">Pandas Series </h2>
 
 <p>
 The <b>Series</b> class is another important class included in
@@ -1567,12 +1663,12 @@ For multidimensional arrays, we also recommend <a href="http://xarray.pydata.org
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec49">Our first Machine Learning Encounter </h2>
+<h2 id="our-first-machine-learning-encounter">Our first Machine Learning Encounter </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec50">Reading Data and Fitting  </h2>
+<h2 id="reading-data-and-fitting">Reading Data and Fitting  </h2>
 
 <p>
 In order to study various Machine Learning algorithms, we need to
@@ -1611,7 +1707,7 @@ But before we really start with nuclear physics data, let's just look at some si
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec51">Simple linear regression model using <b>scikit-learn</b> </h2>
+<h2 id="simple-linear-regression-model-using-_scikit-learn_">Simple linear regression model using <b>scikit-learn</b> </h2>
 
 <p>
 We start with perhaps our simplest possible example, using <b>Scikit-Learn</b> to perform linear regression analysis on a data set produced by us.
@@ -1629,7 +1725,7 @@ random noise added via the normal distribution.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec52">Simple linear regression model using <b>scikit-learn</b>, Numpy functions </h2>
+<h2 id="simple-linear-regression-model-using-<b>scikit-learn</b>-numpy-functions">Simple linear regression model using <b>scikit-learn</b>, Numpy functions </h2>
 
 <p>
 The Numpy functions are imported used the <b>import numpy as np</b>
@@ -1659,7 +1755,7 @@ distinguish between training data and test data.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec53">Simple linear regression model using <b>scikit-learn</b>, Matplotlib </h2>
+<h2 id="simple-linear-regression-model-using-<b>scikit-learn</b>-matplotlib">Simple linear regression model using <b>scikit-learn</b>, Matplotlib </h2>
 
 <p>
 For plotting we use the Python package
@@ -1675,7 +1771,7 @@ The Python code follows here.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Importing various packages</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.linear_model</span> <span style="color: #008000; font-weight: bold">import</span> LinearRegression
@@ -1698,7 +1794,7 @@ plt<span style="color: #666666">.</span>show()
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec54">Simple linear regression model, what to expect </h2>
+<h2 id="simple-linear-regression-model-what-to-expect">Simple linear regression model, what to expect </h2>
 
 <p>
 This example serves several aims. It allows us to demonstrate several
@@ -1725,7 +1821,7 @@ have not discussed a more rigorous approach to the <b>cost</b> function.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec55">Simple linear regression model, how to evaluate the model </h2>
+<h2 id="simple-linear-regression-model-how-to-evaluate-the-model">Simple linear regression model, how to evaluate the model </h2>
 
 <p>
 We need more rigorous criteria in defining whether we have succeeded or
@@ -1747,7 +1843,7 @@ dimensionless.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec56">Our first Cost/Loss function encounter </h2>
+<h2 id="our-first-cost-loss-function-encounter">Our first Cost/Loss function encounter </h2>
 
 <p>
 Minimizing the cost function is a central aspect of
@@ -1768,7 +1864,7 @@ the  \( \chi^2 \) function becomes smaller.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec57">Our first Cost/Loss function encounter </h2>
+<h2 id="our-first-cost-loss-function-encounter">Our first Cost/Loss function encounter </h2>
 
 <p>
 The terms cost and loss functions are often synonymous, sometimes you will also encounter the usage  error function.
@@ -1778,7 +1874,7 @@ It is common to see statements like this however: <b>The loss function computes 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec58">Our first Cost/Loss function encounter, how do we define them?  </h2>
+<h2 id="our-first-cost-loss-function-encounter-how-do-we-define-them">Our first Cost/Loss function encounter, how do we define them?  </h2>
 
 <p>
 There are many ways to define the cost/loss function. A simpler approach is to look at the relative difference between the training data and the predicted data, that is we define 
@@ -1801,7 +1897,7 @@ We can modify easily the above Python code and plot the relative error instead
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.linear_model</span> <span style="color: #008000; font-weight: bold">import</span> LinearRegression
 
@@ -1814,7 +1910,7 @@ ypredict <span style="color: #666666">=</span> linreg<span style="color: #666666
 plt<span style="color: #666666">.</span>plot(x, np<span style="color: #666666">.</span>abs(ypredict<span style="color: #666666">-</span>y)<span style="color: #666666">/</span><span style="color: #008000">abs</span>(y), <span style="color: #BA2121">&quot;ro&quot;</span>)
 plt<span style="color: #666666">.</span>axis([<span style="color: #666666">0</span>,<span style="color: #666666">1.0</span>,<span style="color: #666666">0.0</span>, <span style="color: #666666">0.5</span>])
 plt<span style="color: #666666">.</span>xlabel(<span style="color: #BA2121">r&#39;$x$&#39;</span>)
-plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">r&#39;$\epsilon_{\mathrm{relative}}$&#39;</span>)
+plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">r&#39;$\epsilon_{\mathrm</span><span style="color: #BB6688; font-weight: bold">{relative}</span><span style="color: #BA2121">}$&#39;</span>)
 plt<span style="color: #666666">.</span>title(<span style="color: #BA2121">r&#39;Relative error&#39;</span>)
 plt<span style="color: #666666">.</span>show()
 </pre></div>
@@ -1827,7 +1923,7 @@ relative error.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec59"><b>Scikit-Learn</b> functionality  </h2>
+<h2 id="_scikit-learn_-functionality"><b>Scikit-Learn</b> functionality  </h2>
 
 <p>
 As mentioned above, <b>Scikit-Learn</b> has an impressive functionality.
@@ -1841,7 +1937,7 @@ example of the functionality of <b>Scikit-Learn</b>.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span> 
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span> 
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span> 
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.linear_model</span> <span style="color: #008000; font-weight: bold">import</span> LinearRegression 
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.metrics</span> <span style="color: #008000; font-weight: bold">import</span> mean_squared_error, r2_score, mean_squared_log_error, mean_absolute_error
@@ -1851,16 +1947,16 @@ y <span style="color: #666666">=</span> <span style="color: #666666">2.0+</span>
 linreg <span style="color: #666666">=</span> LinearRegression()
 linreg<span style="color: #666666">.</span>fit(x,y)
 ypredict <span style="color: #666666">=</span> linreg<span style="color: #666666">.</span>predict(x)
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;The intercept alpha: </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&#39;</span>, linreg<span style="color: #666666">.</span>intercept_)
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Coefficient beta : </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&#39;</span>, linreg<span style="color: #666666">.</span>coef_)
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;The intercept alpha: </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&#39;</span>, linreg<span style="color: #666666">.</span>intercept_)
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Coefficient beta : </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&#39;</span>, linreg<span style="color: #666666">.</span>coef_)
 <span style="color: #408080; font-style: italic"># The mean squared error                               </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Mean squared error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&quot;</span> <span style="color: #666666">%</span> mean_squared_error(y, ypredict))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Mean squared error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&quot;</span> <span style="color: #666666">%</span> mean_squared_error(y, ypredict))
 <span style="color: #408080; font-style: italic"># Explained variance score: 1 is perfect prediction                                 </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Variance score: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> r2_score(y, ypredict))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Variance score: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> r2_score(y, ypredict))
 <span style="color: #408080; font-style: italic"># Mean squared log error                                                        </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Mean squared log error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_squared_log_error(y, ypredict) )
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Mean squared log error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_squared_log_error(y, ypredict) )
 <span style="color: #408080; font-style: italic"># Mean absolute error                                                           </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Mean absolute error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_absolute_error(y, ypredict))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Mean absolute error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_absolute_error(y, ypredict))
 plt<span style="color: #666666">.</span>plot(x, ypredict, <span style="color: #BA2121">&quot;r-&quot;</span>)
 plt<span style="color: #666666">.</span>plot(x, y ,<span style="color: #BA2121">&#39;ro&#39;</span>)
 plt<span style="color: #666666">.</span>axis([<span style="color: #666666">0.0</span>,<span style="color: #666666">1.0</span>,<span style="color: #666666">1.5</span>, <span style="color: #666666">7.0</span>])
@@ -1941,14 +2037,14 @@ detail these and other functions in the various lectures.
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec60">Cubic Polynomial </h2>
+<h2 id="cubic-polynomial">Cubic Polynomial </h2>
 We conclude this part with another example. Instead of 
 a linear \( x \)-dependence we study now a cubic polynomial and use the polynomial regression analysis tools of scikit-learn.
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">random</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.linear_model</span> <span style="color: #008000; font-weight: bold">import</span> Ridge
@@ -1977,17 +2073,17 @@ plt<span style="color: #666666">.</span>show()
         err<span style="color: #666666">=</span>(y<span style="color: #666666">-</span>yn)<span style="color: #666666">/</span>yn
     <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">abs</span>(np<span style="color: #666666">.</span>sum(err))<span style="color: #666666">/</span><span style="color: #008000">len</span>(err)
 
-<span style="color: #008000; font-weight: bold">print</span> (error(y))
+<span style="color: #008000">print</span> (error(y))
 </pre></div>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec61">Getting more serious, fitting Nuclear Binding Energies </h2>
+<h2 id="getting-more-serious-fitting-nuclear-binding-energies">Getting more serious, fitting Nuclear Binding Energies </h2>
 
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec62">To our real data: nuclear binding energies. Brief reminder on masses and binding energies </h2>
+<h2 id="to-our-real-data-nuclear-binding-energies-brief-reminder-on-masses-and-binding-energies">To our real data: nuclear binding energies. Brief reminder on masses and binding energies </h2>
 
 <p>
 Let us now dive into  nuclear physics and remind ourselves briefly about some basic features about binding
@@ -2065,7 +2161,7 @@ We could also add a so-called pairing term, which is a correction term that
 arises from the tendency of proton pairs and neutron pairs to
 occur. An even number of particles is more stable than an odd number.
 
-<h3 id="___sec63">Organizing our data </h3>
+<h3 id="organizing-our-data">Organizing our data </h3>
 
 <p>
 Let us start with reading and organizing our data. 
@@ -2077,7 +2173,7 @@ We start with preparing folders for storing our calculations and the data file o
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Common imports</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Common imports</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
@@ -2107,7 +2203,7 @@ DATA_ID <span style="color: #666666">=</span> <span style="color: #BA2121">&quot
     <span style="color: #008000; font-weight: bold">return</span> os<span style="color: #666666">.</span>path<span style="color: #666666">.</span>join(DATA_ID, dat_id)
 
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">save_fig</span>(fig_id):
-    plt<span style="color: #666666">.</span>savefig(image_path(fig_id) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;.png&quot;</span>, format<span style="color: #666666">=</span><span style="color: #BA2121">&#39;png&#39;</span>)
+    plt<span style="color: #666666">.</span>savefig(image_path(fig_id) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;.png&quot;</span>, <span style="color: #008000">format</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;png&#39;</span>)
 
 infile <span style="color: #666666">=</span> <span style="color: #008000">open</span>(data_path(<span style="color: #BA2121">&quot;MassEval2016.dat&quot;</span>),<span style="color: #BA2121">&#39;r&#39;</span>)
 </pre></div>
@@ -2123,7 +2219,7 @@ In particular, the program that outputs the final nuclear masses is written in F
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;                                                                                                                         </span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;                                                                                                                         </span>
 <span style="color: #BA2121; font-style: italic">This is taken from the data file of the mass 2016 evaluation.                                                               </span>
 <span style="color: #BA2121; font-style: italic">All files are 3436 lines long with 124 character per line.                                                                  </span>
 <span style="color: #BA2121; font-style: italic">       Headers are 39 lines long.                                                                                           </span>
@@ -2143,12 +2239,12 @@ covert them into the <b>pandas</b> DataFrame structure.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Read the experimental data with Pandas</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Read the experimental data with Pandas</span>
 Masses <span style="color: #666666">=</span> pd<span style="color: #666666">.</span>read_fwf(infile, usecols<span style="color: #666666">=</span>(<span style="color: #666666">2</span>,<span style="color: #666666">3</span>,<span style="color: #666666">4</span>,<span style="color: #666666">6</span>,<span style="color: #666666">11</span>),
               names<span style="color: #666666">=</span>(<span style="color: #BA2121">&#39;N&#39;</span>, <span style="color: #BA2121">&#39;Z&#39;</span>, <span style="color: #BA2121">&#39;A&#39;</span>, <span style="color: #BA2121">&#39;Element&#39;</span>, <span style="color: #BA2121">&#39;Ebinding&#39;</span>),
               widths<span style="color: #666666">=</span>(<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">4</span>,<span style="color: #666666">1</span>,<span style="color: #666666">13</span>,<span style="color: #666666">11</span>,<span style="color: #666666">11</span>,<span style="color: #666666">9</span>,<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">11</span>,<span style="color: #666666">9</span>,<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">1</span>,<span style="color: #666666">12</span>,<span style="color: #666666">11</span>,<span style="color: #666666">1</span>),
               header<span style="color: #666666">=39</span>,
-              index_col<span style="color: #666666">=</span><span style="color: #008000">False</span>)
+              index_col<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">False</span>)
 
 <span style="color: #408080; font-style: italic"># Extrapolated values are indicated by &#39;#&#39; in place of the decimal place, so</span>
 <span style="color: #408080; font-style: italic"># the Ebinding column won&#39;t be numeric. Coerce to float and drop these entries.</span>
@@ -2177,12 +2273,12 @@ the number of nucleons \( A \), the number of protons \( Z \) and the number of 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>A <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;A&#39;</span>]
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>A <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;A&#39;</span>]
 Z <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;Z&#39;</span>]
 N <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;N&#39;</span>]
 Element <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;Element&#39;</span>]
 Energies <span style="color: #666666">=</span> Masses[<span style="color: #BA2121">&#39;Ebinding&#39;</span>]
-<span style="color: #008000; font-weight: bold">print</span>(Masses)
+<span style="color: #008000">print</span>(Masses)
 </pre></div>
 <p>
 The next step, and we will define this mathematically later, is to set up the so-called <b>design/feature matrix</b>. We will throughout label  this matrix as \( \boldsymbol{X} \).
@@ -2190,7 +2286,7 @@ It has dimensionality \( n\times p \), where \( n \) is the number of data point
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Now we set up the design matrix X</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Now we set up the design matrix X</span>
 X <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((<span style="color: #008000">len</span>(A),<span style="color: #666666">5</span>))
 X[:,<span style="color: #666666">0</span>] <span style="color: #666666">=</span> <span style="color: #666666">1</span>
 X[:,<span style="color: #666666">1</span>] <span style="color: #666666">=</span> A
@@ -2203,7 +2299,7 @@ With <b>scikitlearn</b> we are now ready to use linear regression and fit our da
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>clf <span style="color: #666666">=</span> skl<span style="color: #666666">.</span>LinearRegression()<span style="color: #666666">.</span>fit(X, Energies)
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>clf <span style="color: #666666">=</span> skl<span style="color: #666666">.</span>LinearRegression()<span style="color: #666666">.</span>fit(X, Energies)
 fity <span style="color: #666666">=</span> clf<span style="color: #666666">.</span>predict(X)
 </pre></div>
 <p>
@@ -2214,19 +2310,19 @@ Now we can print measures of how our fit is doing, the coefficients from the fit
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># The mean squared error                               </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Mean squared error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&quot;</span> <span style="color: #666666">%</span> mean_squared_error(Energies, fity))
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># The mean squared error                               </span>
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Mean squared error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&quot;</span> <span style="color: #666666">%</span> mean_squared_error(Energies, fity))
 <span style="color: #408080; font-style: italic"># Explained variance score: 1 is perfect prediction                                 </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Variance score: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> r2_score(Energies, fity))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Variance score: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> r2_score(Energies, fity))
 <span style="color: #408080; font-style: italic"># Mean absolute error                                                           </span>
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Mean absolute error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_absolute_error(Energies, fity))
-<span style="color: #008000; font-weight: bold">print</span>(clf<span style="color: #666666">.</span>coef_, clf<span style="color: #666666">.</span>intercept_)
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Mean absolute error: </span><span style="color: #BB6688; font-weight: bold">%.2f</span><span style="color: #BA2121">&#39;</span> <span style="color: #666666">%</span> mean_absolute_error(Energies, fity))
+<span style="color: #008000">print</span>(clf<span style="color: #666666">.</span>coef_, clf<span style="color: #666666">.</span>intercept_)
 
 Masses[<span style="color: #BA2121">&#39;Eapprox&#39;</span>]  <span style="color: #666666">=</span> fity
 <span style="color: #408080; font-style: italic"># Generate a plot comparing the experimental with the fitted values values.</span>
 fig, ax <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>subplots()
 ax<span style="color: #666666">.</span>set_xlabel(<span style="color: #BA2121">r&#39;$A = N + Z$&#39;</span>)
-ax<span style="color: #666666">.</span>set_ylabel(<span style="color: #BA2121">r&#39;$E_\mathrm{bind}\,/\mathrm{MeV}$&#39;</span>)
+ax<span style="color: #666666">.</span>set_ylabel(<span style="color: #BA2121">r&#39;$E_\mathrm</span><span style="color: #BB6688; font-weight: bold">{bind}</span><span style="color: #BA2121">\,/\mathrm</span><span style="color: #BB6688; font-weight: bold">{MeV}</span><span style="color: #BA2121">$&#39;</span>)
 ax<span style="color: #666666">.</span>plot(Masses[<span style="color: #BA2121">&#39;A&#39;</span>], Masses[<span style="color: #BA2121">&#39;Ebinding&#39;</span>], alpha<span style="color: #666666">=0.7</span>, lw<span style="color: #666666">=2</span>,
             label<span style="color: #666666">=</span><span style="color: #BA2121">&#39;Ame2016&#39;</span>)
 ax<span style="color: #666666">.</span>plot(Masses[<span style="color: #BA2121">&#39;A&#39;</span>], Masses[<span style="color: #BA2121">&#39;Eapprox&#39;</span>], alpha<span style="color: #666666">=0.7</span>, lw<span style="color: #666666">=2</span>, c<span style="color: #666666">=</span><span style="color: #BA2121">&#39;m&#39;</span>,
@@ -2236,7 +2332,7 @@ save_fig(<span style="color: #BA2121">&quot;Masses2016&quot;</span>)
 plt<span style="color: #666666">.</span>show()
 </pre></div>
 
-<h3 id="___sec64">Seeing the wood for the trees </h3>
+<h3 id="seeing-the-wood-for-the-trees">Seeing the wood for the trees </h3>
 
 <p>
 As a teaser, let us now see how we can do this with decision trees using <b>scikit-learn</b>. We will discuss the method in more details later.
@@ -2244,7 +2340,7 @@ As a teaser, let us now see how we can do this with decision trees using <b>scik
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic">#Decision Tree Regression</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic">#Decision Tree Regression</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.tree</span> <span style="color: #008000; font-weight: bold">import</span> DecisionTreeRegressor
 regr_1<span style="color: #666666">=</span>DecisionTreeRegressor(max_depth<span style="color: #666666">=5</span>)
 regr_2<span style="color: #666666">=</span>DecisionTreeRegressor(max_depth<span style="color: #666666">=7</span>)
@@ -2271,11 +2367,11 @@ plt<span style="color: #666666">.</span>title(<span style="color: #BA2121">&quot
 plt<span style="color: #666666">.</span>legend()
 save_fig(<span style="color: #BA2121">&quot;Masses2016Trees&quot;</span>)
 plt<span style="color: #666666">.</span>show()
-<span style="color: #008000; font-weight: bold">print</span>(Masses)
-<span style="color: #008000; font-weight: bold">print</span>(np<span style="color: #666666">.</span>mean( (Energies<span style="color: #666666">-</span>y_1)<span style="color: #666666">**2</span>))
+<span style="color: #008000">print</span>(Masses)
+<span style="color: #008000">print</span>(np<span style="color: #666666">.</span>mean( (Energies<span style="color: #666666">-</span>y_1)<span style="color: #666666">**2</span>))
 </pre></div>
 
-<h3 id="___sec65">And what about using neural networks? </h3>
+<h3 id="and-what-about-using-neural-networks">And what about using neural networks? </h3>
 
 <p>
 The <b>seaborn</b> package allows us to visualize data in an efficient way. Note that we use <b>scikit-learn</b>'s multi-layer perceptron (or feed forward neural network) 
@@ -2283,7 +2379,7 @@ functionality.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.neural_network</span> <span style="color: #008000; font-weight: bold">import</span> MLPRegressor
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.neural_network</span> <span style="color: #008000; font-weight: bold">import</span> MLPRegressor
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.metrics</span> <span style="color: #008000; font-weight: bold">import</span> accuracy_score
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">seaborn</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">sns</span>
 
@@ -2307,7 +2403,7 @@ sns<span style="color: #666666">.</span>set()
         train_accuracy[i][j] <span style="color: #666666">=</span> dnn<span style="color: #666666">.</span>score(X_train, Y_train)
 
 fig, ax <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>subplots(figsize <span style="color: #666666">=</span> (<span style="color: #666666">10</span>, <span style="color: #666666">10</span>))
-sns<span style="color: #666666">.</span>heatmap(train_accuracy, annot<span style="color: #666666">=</span><span style="color: #008000">True</span>, ax<span style="color: #666666">=</span>ax, cmap<span style="color: #666666">=</span><span style="color: #BA2121">&quot;viridis&quot;</span>)
+sns<span style="color: #666666">.</span>heatmap(train_accuracy, annot<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, ax<span style="color: #666666">=</span>ax, cmap<span style="color: #666666">=</span><span style="color: #BA2121">&quot;viridis&quot;</span>)
 ax<span style="color: #666666">.</span>set_title(<span style="color: #BA2121">&quot;Training Accuracy&quot;</span>)
 ax<span style="color: #666666">.</span>set_ylabel(<span style="color: #BA2121">&quot;$\eta$&quot;</span>)
 ax<span style="color: #666666">.</span>set_xlabel(<span style="color: #BA2121">&quot;$\lambda$&quot;</span>)
@@ -2316,7 +2412,7 @@ plt<span style="color: #666666">.</span>show()
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
 
-<h2 id="___sec66">More on flexibility with pandas and xarray </h2>
+<h2 id="more-on-flexibility-with-pandas-and-xarray">More on flexibility with pandas and xarray </h2>
 
 <p>
 Let us study the \( Q \) values associated with the removal of one or two nucleons from
@@ -2371,7 +2467,7 @@ Thereafter we pick the oxygen isotopes and simply compute the separation energie
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Common imports</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># Common imports</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
@@ -2411,7 +2507,7 @@ DATA_ID <span style="color: #666666">=</span> <span style="color: #BA2121">&quot
     <span style="color: #008000; font-weight: bold">return</span> os<span style="color: #666666">.</span>path<span style="color: #666666">.</span>join(DATA_ID, dat_id)
 
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">save_fig</span>(fig_id):
-    plt<span style="color: #666666">.</span>savefig(image_path(fig_id) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;.png&quot;</span>, format<span style="color: #666666">=</span><span style="color: #BA2121">&#39;png&#39;</span>)
+    plt<span style="color: #666666">.</span>savefig(image_path(fig_id) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;.png&quot;</span>, <span style="color: #008000">format</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;png&#39;</span>)
 
 infile <span style="color: #666666">=</span> <span style="color: #008000">open</span>(data_path(<span style="color: #BA2121">&quot;MassEval2016.dat&quot;</span>),<span style="color: #BA2121">&#39;r&#39;</span>)
 
@@ -2421,7 +2517,7 @@ Masses <span style="color: #666666">=</span> pd<span style="color: #666666">.</s
               names<span style="color: #666666">=</span>(<span style="color: #BA2121">&#39;N&#39;</span>, <span style="color: #BA2121">&#39;Z&#39;</span>, <span style="color: #BA2121">&#39;A&#39;</span>, <span style="color: #BA2121">&#39;Element&#39;</span>, <span style="color: #BA2121">&#39;Ebinding&#39;</span>),
               widths<span style="color: #666666">=</span>(<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">4</span>,<span style="color: #666666">1</span>,<span style="color: #666666">13</span>,<span style="color: #666666">11</span>,<span style="color: #666666">11</span>,<span style="color: #666666">9</span>,<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">11</span>,<span style="color: #666666">9</span>,<span style="color: #666666">1</span>,<span style="color: #666666">3</span>,<span style="color: #666666">1</span>,<span style="color: #666666">12</span>,<span style="color: #666666">11</span>,<span style="color: #666666">1</span>),
               header<span style="color: #666666">=39</span>,
-              index_col<span style="color: #666666">=</span><span style="color: #008000">False</span>)
+              index_col<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">False</span>)
 
 <span style="color: #408080; font-style: italic"># Extrapolated values are indicated by &#39;#&#39; in place of the decimal place, so</span>
 <span style="color: #408080; font-style: italic"># the Ebinding column won&#39;t be numeric. Coerce to float and drop these entries.</span>
@@ -2442,7 +2538,7 @@ Nucleus <span style="color: #666666">=</span> df<span style="color: #666666">.</
 Nucleus <span style="color: #666666">=</span> Nucleus<span style="color: #666666">.</span>dropna()
 <span style="color: #408080; font-style: italic"># Here we do the magic and obtain the neutron separation energies, one line of code!!</span>
 Nucleus[<span style="color: #BA2121">&#39;NeutronSeparationEnergies&#39;</span>] <span style="color: #666666">=</span> Nucleus[<span style="color: #BA2121">&#39;Energies&#39;</span>]<span style="color: #666666">.</span>diff(<span style="color: #666666">+1</span>)
-<span style="color: #008000; font-weight: bold">print</span>(Nucleus)
+<span style="color: #008000">print</span>(Nucleus)
 MakePlot([Nucleus<span style="color: #666666">.</span>A], [Nucleus<span style="color: #666666">.</span>NeutronSeparationEnergies], [<span style="color: #BA2121">&#39;b&#39;</span>], [<span style="color: #BA2121">&#39;Neutron Separation Energy&#39;</span>], [<span style="color: #BA2121">&#39;$A$&#39;</span>,<span style="color: #BA2121">&#39;$S_n$&#39;</span>])
 save_fig(<span style="color: #BA2121">&#39;Nucleus&#39;</span>)
 plt<span style="color: #666666">.</span>show()
