@@ -23,13 +23,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/pdf/Introduction.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/pdf/Introduction.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Introduction.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Introduction-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/html/Introduction-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/html/Introduction-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Introduction/ipynb/Introduction.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/ipynb/Introduction.ipynb"
 
 
 ===== Monday July 20: Linear Regression =====
@@ -38,13 +38,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/pdf/Day1.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/pdf/Day1.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/html/Day1.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/html/Day1-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/html/Day1-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/html/Day1-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day1/ipynb/Day1.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/ipynb/Day1.ipynb"
 
 
 ===== Tuesday July 21: Logistic Regression and Gradient Methods =====
@@ -53,13 +53,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/pdf/Day2.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/pdf/Day2.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/html/Day2.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/html/Day2-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/html/Day2-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/html/Day2.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/html/Day2-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/html/Day2-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day2/ipynb/Day2.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/ipynb/Day2.ipynb"
 
 
 ===== Wednesday July 22: Decision Trees, Random Forests, Bagging and Boosting =====
@@ -68,13 +68,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/pdf/Day3.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/pdf/Day3.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/html/Day3.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/html/Day3-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/html/Day3-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/html/Day3.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/html/Day3-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/html/Day3-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day3/ipynb/Day3.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/ipynb/Day3.ipynb"
 
 
 ===== Thursday July 23: Introduction to Neural Networks and Deep Learning =====
@@ -83,13 +83,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/pdf/Day4.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/pdf/Day4.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/html/Day4.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/html/Day4-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/html/Day4-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/html/Day4.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/html/Day4-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/html/Day4-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day4/ipynb/Day4.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/ipynb/Day4.ipynb"
 
 
 ===== Friday July 24: Beta-decay experiments, how to analyze various events, with hands-on examples  =====
@@ -98,13 +98,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/pdf/Day5.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/pdf/Day5.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/html/Day5.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/html/Day5-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/html/Day5-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/html/Day5.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/html/Day5-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/html/Day5-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day5/ipynb/Day5.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day5/ipynb/Day5.ipynb"
 
 
 ===== Monday July 26: Deep Learning and Neural networks =====
@@ -113,13 +113,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/pdf/Day6.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/pdf/Day6.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/html/Day6.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/html/Day6-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/html/Day6-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/html/Day6.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/html/Day6-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/html/Day6-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day6/ipynb/Day6.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day6/ipynb/Day6.ipynb"
 
 
 ===== Tuesday July 27: From Neural Networks to Convolutional Neural Networks =====
@@ -128,13 +128,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/pdf/Day7.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/pdf/Day7.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/html/Day7.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/html/Day7-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/html/Day7-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/html/Day7.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/html/Day7-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/html/Day7-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day7/ipynb/Day7.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day7/ipynb/Day7.ipynb"
 
 
 ===== Wednesday July 28: Discussion of nuclear experiments and how to analyze data, presentation of simulated data from Active-Target Time-Projection Chamber =====
@@ -143,13 +143,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/pdf/Day8.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/pdf/Day8.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/html/Day8.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/html/Day8-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/html/Day8-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/html/Day8.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/html/Day8-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/html/Day8-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day8/ipynb/Day8.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day8/ipynb/Day8.ipynb"
 
 
 ===== Thursday July 29: Generative models =====
@@ -158,13 +158,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/pdf/Day9.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/pdf/Day9.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/html/Day9.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/html/Day9-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/html/Day9-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/html/Day9.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/html/Day9-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/html/Day9-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day9/ipynb/Day9.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day9/ipynb/Day9.ipynb"
 
 
 ===== Friday July 30: Reinforcement Learning. Future directions in machine learning and summary of course. =====
@@ -173,13 +173,13 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/pdf/Day10.pdf"
+     * "Standard one-page format": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/pdf/Day10.pdf"
  * HTML:
-   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/html/Day10.html"
-   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/html/Day10-reveal.html"
-   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/html/Day10-bs.html"
+   * "Plain html": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/html/Day10.html"
+   * "reveal.js slide style": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/html/Day10-reveal.html"
+   * "Bootstrap  slide style, easy for reading on mobile devices": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/html/Day10-bs.html"
  * Jupyter notebook:
-   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT/doc/pub/Day10/ipynb/Day10.ipynb"
+   * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day10/ipynb/Day10.ipynb"
 
 
 
