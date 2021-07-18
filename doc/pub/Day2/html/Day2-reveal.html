@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Data Analysis and Machine Learning: Logistic Regression and Gradient Methods">
 
@@ -13,7 +13,7 @@
 
 
 
-<!-- reveal.js: http://lab.hakim.se/reveal-js/ -->
+<!-- reveal.js: https://lab.hakim.se/reveal-js/ -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -76,10 +76,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
      .reveal .alert-block > p, .alert-block > ul {margin-bottom:1em}
      /*.reveal .alert li {margin-top: 1em}*/
      .reveal .alert-block p+p {margin-top:5px}
-     /*.reveal .alert-notice { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_notice.png); }
-     .reveal .alert-summary  { background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_summary.png); }
-     .reveal .alert-warning { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_warning.png); }
-     .reveal .alert-question {background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
+     /*.reveal .alert-notice { background-image: url(https://hplgit.github.io/doconce/bundled/html_images/small_gray_notice.png); }
+     .reveal .alert-summary  { background-image:url(https://hplgit.github.io/doconce/bundled/html_images/small_gray_summary.png); }
+     .reveal .alert-warning { background-image: url(https://hplgit.github.io/doconce/bundled/html_images/small_gray_warning.png); }
+     .reveal .alert-question {background-image:url(https://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
 
 </style>
 
@@ -148,18 +148,18 @@ MathJax.Hub.Config({
 <center>[2] <b>Department of Physics and Astronomy and Facility for Rare Ion Beams and National Superconducting Cyclotron Laboratory, Michigan State University, USA</b></center>
 <br>
 <p>&nbsp;<br>
-<center><h4>Jun 26, 2020</h4></center> <!-- date -->
+<center><h4>Jul 18, 2021</h4></center> <!-- date -->
 <br>
 <p>
 
 <center style="font-size:80%">
-<!-- copyright --> &copy; 1999-2020, Morten Hjorth-Jensen. Released under CC Attribution-NonCommercial 4.0 license
+<!-- copyright --> &copy; 1999-2021, Morten Hjorth-Jensen. Released under CC Attribution-NonCommercial 4.0 license
 </center>
 </section>
 
 
 <section>
-<h2 id="___sec0">Logistic Regression </h2>
+<h2 id="logistic-regression">Logistic Regression </h2>
 
 <p>
 In linear regression our main interest was centered on learning the
@@ -177,7 +177,7 @@ simple recipe for fitting our data.
 
 
 <section>
-<h2 id="___sec1">Logistic Regression and Classification Problems </h2>
+<h2 id="logistic-regression-and-classification-problems">Logistic Regression and Classification Problems </h2>
 
 <p>
 Classification problems, however, are concerned with outcomes taking
@@ -200,7 +200,7 @@ failure etc.
 
 
 <section>
-<h2 id="___sec2">Optimization and Deep learning </h2>
+<h2 id="optimization-and-deep-learning">Optimization and Deep learning </h2>
 
 <p>
 Logistic regression will also serve as our stepping stone towards
@@ -221,7 +221,7 @@ models, as we will see later.
 
 
 <section>
-<h2 id="___sec3">Basics </h2>
+<h2 id="basics">Basics </h2>
 
 <p>
 We consider the case where the dependent variables, also called the
@@ -250,7 +250,7 @@ $$
 
 
 <section>
-<h2 id="___sec4">Linear classifier </h2>
+<h2 id="linear-classifier">Linear classifier </h2>
 
 <p>
 Before moving to the logistic model, let us try to use our linear
@@ -276,7 +276,7 @@ where \( \boldsymbol{y} \) is a vector representing the possible outcomes, \( \b
 
 
 <section>
-<h2 id="___sec5">Some selected properties </h2>
+<h2 id="some-selected-properties">Some selected properties </h2>
 
 <p>
 The main problem with our function is that it takes values on the
@@ -298,7 +298,7 @@ the probability of a given category. This leads us to the logistic function.
 
 
 <section>
-<h2 id="___sec6">The logistic function </h2>
+<h2 id="the-logistic-function">The logistic function </h2>
 
 <p>
 The perceptron is an example of a ``hard classification&quot; model. We
@@ -322,7 +322,7 @@ Note that \( 1-p(t)= p(-t) \).
 
 
 <section>
-<h2 id="___sec7">Examples of likelihood functions used in logistic regression and nueral networks </h2>
+<h2 id="examples-of-likelihood-functions-used-in-logistic-regression-and-nueral-networks">Examples of likelihood functions used in logistic regression and nueral networks </h2>
 
 <p>
 The following code plots the logistic function, the step function and other functions we will encounter from here and on.
@@ -330,7 +330,7 @@ The following code plots the logistic function, the step function and other func
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #CD5555">&quot;&quot;&quot;The sigmoid function (or the logistic curve) is a</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #CD5555">&quot;&quot;&quot;The sigmoid function (or the logistic curve) is a</span>
 <span style="color: #CD5555">function that takes any real number, z, and outputs a number (0,1).</span>
 <span style="color: #CD5555">It is useful in neural networks for assigning weights on a relative scale.</span>
 <span style="color: #CD5555">The value z is the weighted sum of parameters involved in the learning algorithm.&quot;&quot;&quot;</span>
@@ -348,7 +348,7 @@ ax = fig.add_subplot(<span style="color: #B452CD">111</span>)
 ax.plot(z, sigma)
 ax.set_ylim([-<span style="color: #B452CD">0.1</span>, <span style="color: #B452CD">1.1</span>])
 ax.set_xlim([-<span style="color: #B452CD">5</span>,<span style="color: #B452CD">5</span>])
-ax.grid(<span style="color: #658b00">True</span>)
+ax.grid(<span style="color: #8B008B; font-weight: bold">True</span>)
 ax.set_xlabel(<span style="color: #CD5555">&#39;z&#39;</span>)
 ax.set_title(<span style="color: #CD5555">&#39;sigmoid function&#39;</span>)
 
@@ -364,7 +364,7 @@ ax = fig.add_subplot(<span style="color: #B452CD">111</span>)
 ax.plot(z, step)
 ax.set_ylim([-<span style="color: #B452CD">0.5</span>, <span style="color: #B452CD">1.5</span>])
 ax.set_xlim([-<span style="color: #B452CD">5</span>,<span style="color: #B452CD">5</span>])
-ax.grid(<span style="color: #658b00">True</span>)
+ax.grid(<span style="color: #8B008B; font-weight: bold">True</span>)
 ax.set_xlabel(<span style="color: #CD5555">&#39;z&#39;</span>)
 ax.set_title(<span style="color: #CD5555">&#39;step function&#39;</span>)
 
@@ -379,7 +379,7 @@ ax = fig.add_subplot(<span style="color: #B452CD">111</span>)
 ax.plot(z, t)
 ax.set_ylim([-<span style="color: #B452CD">1.0</span>, <span style="color: #B452CD">1.0</span>])
 ax.set_xlim([-<span style="color: #B452CD">2</span>*mt.pi,<span style="color: #B452CD">2</span>*mt.pi])
-ax.grid(<span style="color: #658b00">True</span>)
+ax.grid(<span style="color: #8B008B; font-weight: bold">True</span>)
 ax.set_xlabel(<span style="color: #CD5555">&#39;z&#39;</span>)
 ax.set_title(<span style="color: #CD5555">&#39;tanh function&#39;</span>)
 
@@ -389,7 +389,7 @@ plt.show()
 
 
 <section>
-<h2 id="___sec8">Two parameters </h2>
+<h2 id="two-parameters">Two parameters </h2>
 
 <p>
 We assume now that we have two classes with \( y_i \) either \( 0 \) or \( 1 \). Furthermore we assume also that we have only two parameters \( \beta \) in our fitting of the Sigmoid function, that is we define probabilities 
@@ -415,7 +415,7 @@ $$
 
 
 <section>
-<h2 id="___sec9">Maximum likelihood </h2>
+<h2 id="maximum-likelihood">Maximum likelihood </h2>
 
 <p>
 In order to define the total likelihood for all possible outcomes from a  
@@ -442,7 +442,7 @@ $$
 
 
 <section>
-<h2 id="___sec10">The cost function rewritten </h2>
+<h2 id="the-cost-function-rewritten">The cost function rewritten </h2>
 
 <p>
 Reordering the logarithms, we can rewrite the <b>cost/loss</b> function as
@@ -467,7 +467,7 @@ in practice we often supplement the cross-entropy with additional regularization
 
 
 <section>
-<h2 id="___sec11">Minimizing the cross entropy </h2>
+<h2 id="minimizing-the-cross-entropy">Minimizing the cross entropy </h2>
 
 <p>
 The cross entropy is a convex function of the weights \( \boldsymbol{\beta} \) and,
@@ -493,7 +493,7 @@ $$
 
 
 <section>
-<h2 id="___sec12">A more compact expression </h2>
+<h2 id="a-more-compact-expression">A more compact expression </h2>
 
 <p>
 Let us now define a vector \( \boldsymbol{y} \) with \( n \) elements \( y_i \), an
@@ -520,7 +520,7 @@ $$
 
 
 <section>
-<h2 id="___sec13">Extending to more predictors </h2>
+<h2 id="extending-to-more-predictors">Extending to more predictors </h2>
 
 <p>
 Within a binary classification problem, we can easily expand our model to include multiple predictors. Our ratio between likelihoods is then with \( p \) predictors
@@ -540,7 +540,7 @@ $$
 
 
 <section>
-<h2 id="___sec14">Including more classes </h2>
+<h2 id="including-more-classes">Including more classes </h2>
 
 <p>
 Till now we have mainly focused on two classes, the so-called binary
@@ -574,7 +574,7 @@ and the model is specified in term of \( K-1 \) so-called log-odds or
 
 
 <section>
-<h2 id="___sec15">More classes </h2>
+<h2 id="more-classes">More classes </h2>
 
 <p>
 In our discussion of neural networks we will encounter the above again
@@ -618,7 +618,7 @@ methods</a>.
 
 
 <section>
-<h2 id="___sec16">Preprocessing our data  </h2>
+<h2 id="preprocessing-our-data">Preprocessing our data  </h2>
 
 <p>
 We discuss here how to preprocess our
@@ -642,7 +642,7 @@ ensures that all features are exactly between \( 0 \) and \( 1 \). The
 
 
 <section>
-<h2 id="___sec17">More preprocessing </h2>
+<h2 id="more-preprocessing">More preprocessing </h2>
 
 <p>
 The <b>Normalizer</b> scales each data
@@ -666,7 +666,7 @@ techniques.
 
 
 <section>
-<h2 id="___sec18">Simple preprocessing examples, breast cancer data and classification </h2>
+<h2 id="simple-preprocessing-examples-breast-cancer-data-and-classification">Simple preprocessing examples, breast cancer data and classification </h2>
 
 <p>
 We show here how we can use a simple regression case on the breast
@@ -676,7 +676,7 @@ classification.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sklearn.model_selection</span> <span style="color: #8B008B; font-weight: bold">import</span>  train_test_split 
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sklearn.datasets</span> <span style="color: #8B008B; font-weight: bold">import</span> load_breast_cancer
@@ -687,7 +687,7 @@ cancer = load_breast_cancer()
 X_train, X_test, y_train, y_test = train_test_split(cancer.data,cancer.target,random_state=<span style="color: #B452CD">0</span>)
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Test set accuracy: {:.2f}&quot;</span>.format(logreg.score(X_test,y_test)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Test set accuracy: {:.2f}&quot;</span>.format(logreg.score(X_test,y_test)))
 
 <span style="color: #228B22"># Scale data</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sklearn.preprocessing</span> <span style="color: #8B008B; font-weight: bold">import</span> StandardScaler
@@ -696,13 +696,13 @@ scaler.fit(X_train)
 X_train_scaled = scaler.transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 logreg.fit(X_train_scaled, y_train)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Test set accuracy scaled data: {:.2f}&quot;</span>.format(logreg.score(X_test_scaled,y_test)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Test set accuracy scaled data: {:.2f}&quot;</span>.format(logreg.score(X_test_scaled,y_test)))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec19">Covariance and Correlation </h2>
+<h2 id="covariance-and-correlation">Covariance and Correlation </h2>
 
 <p>
 In addition to the plot of the features, we study now also the covariance (and the correlation matrix).
@@ -710,7 +710,7 @@ We use also <b>Pandas</b> to compute the correlation matrix.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sklearn.model_selection</span> <span style="color: #8B008B; font-weight: bold">import</span>  train_test_split 
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sklearn.datasets</span> <span style="color: #8B008B; font-weight: bold">import</span> load_breast_cancer
@@ -742,12 +742,12 @@ sns.set(rc={<span style="color: #CD5555">&#39;figure.figsize&#39;</span>:(<span 
 correlation_matrix = cancerpd.corr().round(<span style="color: #B452CD">1</span>)
 <span style="color: #228B22"># use the heatmap function from seaborn to plot the correlation matrix</span>
 <span style="color: #228B22"># annot = True to print the values inside the square</span>
-sns.heatmap(data=correlation_matrix, annot=<span style="color: #658b00">True</span>)
+sns.heatmap(data=correlation_matrix, annot=<span style="color: #8B008B; font-weight: bold">True</span>)
 plt.show()
 
 <span style="color: #228B22">#print eigvalues of correlation matrix</span>
 EigValues, EigVectors = np.linalg.eig(correlation_matrix)
-<span style="color: #8B008B; font-weight: bold">print</span>(EigValues)
+<span style="color: #658b00">print</span>(EigValues)
 </pre></div>
 <p>
 In the above example we note two things. In the first plot we display
@@ -768,14 +768,14 @@ We constructed this matrix using <b>pandas</b> via the statements
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>cancerpd = pd.DataFrame(cancer.data, columns=cancer.feature_names)
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>cancerpd = pd.DataFrame(cancer.data, columns=cancer.feature_names)
 </pre></div>
 <p>
 and then
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>correlation_matrix = cancerpd.corr().round(<span style="color: #B452CD">1</span>)
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>correlation_matrix = cancerpd.corr().round(<span style="color: #B452CD">1</span>)
 </pre></div>
 <p>
 Diagonalizing this matrix we can in turn say something about which
@@ -787,7 +787,7 @@ additional topics on dimensionality reduction.
 
 
 <section>
-<h2 id="___sec20">Optimization, the central part of any Machine Learning algortithm </h2>
+<h2 id="optimization-the-central-part-of-any-machine-learning-algortithm">Optimization, the central part of any Machine Learning algortithm </h2>
 
 <p>
 Almost every problem in machine learning and data science starts with
@@ -802,7 +802,7 @@ some approximative/numerical method to compute the minimum.
 
 
 <section>
-<h2 id="___sec21">Revisiting our Logistic Regression case </h2>
+<h2 id="revisiting-our-logistic-regression-case">Revisiting our Logistic Regression case </h2>
 
 <p>
 In our discussion on Logistic Regression we studied the 
@@ -826,7 +826,7 @@ where \( \boldsymbol{\beta} \) are the weights we wish to extract from data, in 
 
 
 <section>
-<h2 id="___sec22">The equations to solve </h2>
+<h2 id="the-equations-to-solve">The equations to solve </h2>
 
 <p>
 Our compact equations used a definition of a vector \( \boldsymbol{y} \) with \( n \)
@@ -856,7 +856,7 @@ This defines what is called  the Hessian matrix.
 
 
 <section>
-<h2 id="___sec23">Solving using Newton-Raphson's method </h2>
+<h2 id="solving-using-newton-raphson-s-method">Solving using Newton-Raphson's method </h2>
 
 <p>
 If we can set up these equations, Newton-Raphson's iterative method is normally the method of choice. It requires however that we can compute in an efficient way the  matrices that define the first and second derivatives.
@@ -886,7 +886,7 @@ If we can compute these matrices, in particular the Hessian, the above is often 
 
 
 <section>
-<h2 id="___sec24">Brief reminder on Newton-Raphson's method </h2>
+<h2 id="brief-reminder-on-newton-raphson-s-method">Brief reminder on Newton-Raphson's method </h2>
 
 <p>
 Let us quickly remind ourselves how we derive the above method.
@@ -903,7 +903,7 @@ normally discourage the use of this method.
 
 
 <section>
-<h2 id="___sec25">The equations </h2>
+<h2 id="the-equations">The equations </h2>
 
 <p>
 The Newton-Raphson formula consists geometrically of extending the
@@ -947,7 +947,7 @@ $$
 
 
 <section>
-<h2 id="___sec26">Simple geometric interpretation </h2>
+<h2 id="simple-geometric-interpretation">Simple geometric interpretation </h2>
 
 <p>
 The above is Newton-Raphson's method. It has a simple geometric
@@ -965,7 +965,7 @@ vanishes, then Newton-Raphson may fail totally
 
 
 <section>
-<h2 id="___sec27">Extending to more than one variable </h2>
+<h2 id="extending-to-more-than-one-variable">Extending to more than one variable </h2>
 
 <p>
 Newton's method can be generalized to systems of several non-linear equations
@@ -1030,7 +1030,7 @@ more than two non-linear equations. In our case, the Jacobian matrix is given by
 
 
 <section>
-<h2 id="___sec28">Steepest descent </h2>
+<h2 id="steepest-descent">Steepest descent </h2>
 
 <p>
 The basic idea of gradient descent is
@@ -1056,7 +1056,7 @@ we are always moving towards smaller function values, i.e a minimum.
 
 
 <section>
-<h2 id="___sec29">More on Steepest descent </h2>
+<h2 id="more-on-steepest-descent">More on Steepest descent </h2>
 
 <p>
 The previous observation is the basis of the method of steepest
@@ -1077,7 +1077,7 @@ the learning rate within the context of Machine Learning.
 
 
 <section>
-<h2 id="___sec30">The ideal </h2>
+<h2 id="the-ideal">The ideal </h2>
 
 <p>
 Ideally the sequence \( \{\mathbf{x}_k \}_{k=0} \) converges to a global
@@ -1103,7 +1103,7 @@ Note that the gradient is a function of \( \mathbf{x} =
 
 
 <section>
-<h2 id="___sec31">The sensitiveness of the gradient descent </h2>
+<h2 id="the-sensitiveness-of-the-gradient-descent">The sensitiveness of the gradient descent </h2>
 
 <p>
 The gradient descent method 
@@ -1122,7 +1122,7 @@ randomness. One such method is that of Stochastic Gradient Descent
 
 
 <section>
-<h2 id="___sec32">Convex functions </h2>
+<h2 id="convex-functions">Convex functions </h2>
 
 <p>
 Ideally we want our cost/loss function to be convex(concave).
@@ -1142,7 +1142,7 @@ regular polygons (triangles, rectangles, pentagons, etc...).
 
 
 <section>
-<h2 id="___sec33">Convex function </h2>
+<h2 id="convex-function">Convex function </h2>
 
 <p>
 <b>Convex function</b>: Let \( X \subset \mathbb{R}^n \) be a convex set. Assume that the function \( f: X \rightarrow \mathbb{R} \) is continuous, then \( f \) is said to be convex if <p>&nbsp;<br>
@@ -1152,7 +1152,7 @@ $$f(tx_1 + (1-t)x_2) \leq tf(x_1) + (1-t)f(x_2) $$
 
 
 <section>
-<h2 id="___sec34">Conditions on convex functions </h2>
+<h2 id="conditions-on-convex-functions">Conditions on convex functions </h2>
 
 <p>
 In the following we state first and second-order conditions which
@@ -1162,7 +1162,7 @@ details and proofs we refer to: <a href="http://stanford.edu/boyd/cvxbook/, 2004
 
 <p>
 <div class="alert alert-block alert-block alert-text-normal">
-<b>First order condition.</b>
+<b>First order condition</b>
 <p>
 Suppose \( f \) is differentiable (i.e \( \nabla f(x) \) is well defined for
 all \( x \) in the domain of \( f \)). Then \( f \) is convex if and only if \( D_f \)
@@ -1178,7 +1178,7 @@ note that it is always below the graph.
 
 <p>
 <div class="alert alert-block alert-block alert-text-normal">
-<b>Second order condition.</b>
+<b>Second order condition</b>
 <p>
 Assume that \( f \) is twice
 differentiable, i.e the Hessian matrix exists at each point in
@@ -1194,7 +1194,7 @@ This condition is particularly useful since it gives us an procedure for determi
 
 
 <section>
-<h2 id="___sec35">More on convex functions </h2>
+<h2 id="more-on-convex-functions">More on convex functions </h2>
 
 <p>
 The next result is of great importance to us and the reason why we are
@@ -1210,7 +1210,7 @@ is convex the following result provides invaluable information:
 
 <p>
 <div class="alert alert-block alert-block alert-text-normal">
-<b>Any minimum is global for convex functions.</b>
+<b>Any minimum is global for convex functions</b>
 <p>
 Consider the problem of finding \( x \in \mathbb{R}^n \) such that \( f(x) \)
 is minimal, where \( f \) is convex and differentiable. Then, any point
@@ -1223,7 +1223,7 @@ This result means that if we know that the cost/loss function is convex and we a
 
 
 <section>
-<h2 id="___sec36">Some simple problems </h2>
+<h2 id="some-simple-problems">Some simple problems </h2>
 
 <ol>
 <p><li> Show that \( f(x)=x^2 \) is convex for \( x \in \mathbb{R} \) using the definition of convexity. Hint: If you re-write the definition, \( f \) is convex if the following holds for all \( x,y \in D_f \) and any \( \lambda \in [0,1] \) $\lambda f(x)+(1-\lambda)f(y)-f(\lambda x + (1-\lambda) y ) \geq 0$.</li>
@@ -1250,7 +1250,7 @@ Using the definition of convexity, try to show that a function satisfying the pr
 
 
 <section>
-<h2 id="___sec37">Revisiting our first homework </h2>
+<h2 id="revisiting-our-first-homework">Revisiting our first homework </h2>
 
 <p>
 We will use linear regression as a case study for the gradient descent
@@ -1290,7 +1290,7 @@ $$
 
 
 <section>
-<h2 id="___sec38">Gradient descent example </h2>
+<h2 id="gradient-descent-example">Gradient descent example </h2>
 
 <p>
 Let \( \mathbf{y} = (y_1,\cdots,y_n)^T \), \( \mathbf{\boldsymbol{y}} = (\boldsymbol{y}_1,\cdots,\boldsymbol{y}_n)^T \) and \( \beta = (\beta_0, \beta_1)^T \)
@@ -1319,7 +1319,7 @@ and we want to find \( \beta \) such that \( C(\beta) \) is minimized.
 
 
 <section>
-<h2 id="___sec39">The derivative of the cost/loss function </h2>
+<h2 id="the-derivative-of-the-cost-loss-function">The derivative of the cost/loss function </h2>
 
 <p>
 Computing \( \partial C(\beta) / \partial \beta_0 \) and \( \partial C(\beta) / \partial \beta_1 \) we can show  that the gradient can be written as
@@ -1336,7 +1336,7 @@ where \( X \) is the design matrix defined above.
 
 
 <section>
-<h2 id="___sec40">The Hessian matrix </h2>
+<h2 id="the-hessian-matrix">The Hessian matrix </h2>
 The Hessian matrix of \( C(\beta) \) is given by 
 <p>&nbsp;<br>
 $$
@@ -1352,7 +1352,7 @@ This result implies that \( C(\beta) \) is a convex function since the matrix \(
 
 
 <section>
-<h2 id="___sec41">Simple program </h2>
+<h2 id="simple-program">Simple program </h2>
 
 <p>
 We can now write a program that minimizes \( C(\beta) \) using the gradient descent method with a constant learning rate \( \gamma \) according to 
@@ -1374,14 +1374,14 @@ And finally we can compare our solution for \( \beta \) with the analytic result
 
 
 <section>
-<h2 id="___sec42">Gradient Descent Example </h2>
+<h2 id="gradient-descent-example">Gradient Descent Example </h2>
 
 <p>
 Here our simple example
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #228B22"># Importing various packages</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #228B22"># Importing various packages</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">random</span> <span style="color: #8B008B; font-weight: bold">import</span> random, seed
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
@@ -1397,7 +1397,7 @@ y = <span style="color: #B452CD">4</span>+<span style="color: #B452CD">3</span>*
 
 xb = np.c_[np.ones((m,<span style="color: #B452CD">1</span>)), x]
 beta_linreg = np.linalg.inv(xb.T.dot(xb)).dot(xb.T).dot(y)
-<span style="color: #8B008B; font-weight: bold">print</span>(beta_linreg)
+<span style="color: #658b00">print</span>(beta_linreg)
 beta = np.random.randn(<span style="color: #B452CD">2</span>,<span style="color: #B452CD">1</span>)
 
 eta = <span style="color: #B452CD">0.1</span>
@@ -1407,7 +1407,7 @@ Niterations = <span style="color: #B452CD">1000</span>
     gradients = <span style="color: #B452CD">2.0</span>/m*xb.T.dot(xb.dot(beta)-y)
     beta -= eta*gradients
 
-<span style="color: #8B008B; font-weight: bold">print</span>(beta)
+<span style="color: #658b00">print</span>(beta)
 xnew = np.array([[<span style="color: #B452CD">0</span>],[<span style="color: #B452CD">2</span>]])
 xbnew = np.c_[np.ones((<span style="color: #B452CD">2</span>,<span style="color: #B452CD">1</span>)), xnew]
 ypredict = xbnew.dot(beta)
@@ -1425,12 +1425,12 @@ plt.show()
 
 
 <section>
-<h2 id="___sec43">And a corresponding example using <b>scikit-learn</b> </h2>
+<h2 id="and-a-corresponding-example-using-_scikit-learn_">And a corresponding example using <b>scikit-learn</b> </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #228B22"># Importing various packages</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #228B22"># Importing various packages</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">random</span> <span style="color: #8B008B; font-weight: bold">import</span> random, seed
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
@@ -1441,16 +1441,16 @@ y = <span style="color: #B452CD">4</span>+<span style="color: #B452CD">3</span>*
 
 xb = np.c_[np.ones((<span style="color: #B452CD">100</span>,<span style="color: #B452CD">1</span>)), x]
 beta_linreg = np.linalg.inv(xb.T.dot(xb)).dot(xb.T).dot(y)
-<span style="color: #8B008B; font-weight: bold">print</span>(beta_linreg)
-sgdreg = SGDRegressor(n_iter = <span style="color: #B452CD">50</span>, penalty=<span style="color: #658b00">None</span>, eta0=<span style="color: #B452CD">0.1</span>)
+<span style="color: #658b00">print</span>(beta_linreg)
+sgdreg = SGDRegressor(n_iter = <span style="color: #B452CD">50</span>, penalty=<span style="color: #8B008B; font-weight: bold">None</span>, eta0=<span style="color: #B452CD">0.1</span>)
 sgdreg.fit(x,y.ravel())
-<span style="color: #8B008B; font-weight: bold">print</span>(sgdreg.intercept_, sgdreg.coef_)
+<span style="color: #658b00">print</span>(sgdreg.intercept_, sgdreg.coef_)
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec44">Gradient descent and Ridge </h2>
+<h2 id="gradient-descent-and-ridge">Gradient descent and Ridge </h2>
 
 <p>
 We have also discussed Ridge regression where the loss function contains a regularized term given by the \( L_2 \) norm of \( \beta \), 
@@ -1481,11 +1481,11 @@ $$
 
 
 <section>
-<h2 id="___sec45">Program example for gradient descent with Ridge Regression </h2>
+<h2 id="program-example-for-gradient-descent-with-ridge-regression">Program example for gradient descent with Ridge Regression </h2>
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">random</span> <span style="color: #8B008B; font-weight: bold">import</span> random, seed
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">random</span> <span style="color: #8B008B; font-weight: bold">import</span> random, seed
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">mpl_toolkits.mplot3d</span> <span style="color: #8B008B; font-weight: bold">import</span> Axes3D
@@ -1499,14 +1499,14 @@ x = <span style="color: #B452CD">2</span>*np.random.rand(m,<span style="color: #
 y = <span style="color: #B452CD">4</span>+<span style="color: #B452CD">3</span>*x+np.random.randn(m,<span style="color: #B452CD">1</span>)
 
 xb = np.c_[np.ones((m,<span style="color: #B452CD">1</span>)), x]
-XT_X = xb.T <span style="color: #a61717; background-color: #e3d2d2">@</span> xb
+XT_X = xb.T @ xb
 
 <span style="color: #228B22">#Ridge parameter lambda</span>
 lmbda  = <span style="color: #B452CD">0.001</span>
 Id = lmbda* np.eye(XT_X.shape[<span style="color: #B452CD">0</span>])
 
-beta_linreg = np.linalg.inv(XT_X+Id) <span style="color: #a61717; background-color: #e3d2d2">@</span> xb.T <span style="color: #a61717; background-color: #e3d2d2">@</span> y
-<span style="color: #8B008B; font-weight: bold">print</span>(beta_linreg)
+beta_linreg = np.linalg.inv(XT_X+Id) @ xb.T @ y
+<span style="color: #658b00">print</span>(beta_linreg)
 <span style="color: #228B22"># Start plain gradient descent</span>
 beta = np.random.randn(<span style="color: #B452CD">2</span>,<span style="color: #B452CD">1</span>)
 
@@ -1514,12 +1514,12 @@ eta = <span style="color: #B452CD">0.1</span>
 Niterations = <span style="color: #B452CD">100</span>
 
 <span style="color: #8B008B; font-weight: bold">for</span> <span style="color: #658b00">iter</span> <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(Niterations):
-    gradients = <span style="color: #B452CD">2.0</span>/m*xb.T <span style="color: #a61717; background-color: #e3d2d2">@</span> (xb <span style="color: #a61717; background-color: #e3d2d2">@</span> (beta)-y)+<span style="color: #B452CD">2</span>*lmbda*beta
+    gradients = <span style="color: #B452CD">2.0</span>/m*xb.T @ (xb @ (beta)-y)+<span style="color: #B452CD">2</span>*lmbda*beta
     beta -= eta*gradients
 
-<span style="color: #8B008B; font-weight: bold">print</span>(beta)
-ypredict = xb <span style="color: #a61717; background-color: #e3d2d2">@</span> beta
-ypredict2 = xb <span style="color: #a61717; background-color: #e3d2d2">@</span> beta_linreg
+<span style="color: #658b00">print</span>(beta)
+ypredict = xb @ beta
+ypredict2 = xb @ beta_linreg
 plt.plot(x, ypredict, <span style="color: #CD5555">&quot;r-&quot;</span>)
 plt.plot(x, ypredict2, <span style="color: #CD5555">&quot;b-&quot;</span>)
 plt.plot(x, y ,<span style="color: #CD5555">&#39;ro&#39;</span>)
@@ -1533,7 +1533,7 @@ plt.show()
 
 
 <section>
-<h2 id="___sec46">Using gradient descent methods, limitations </h2>
+<h2 id="using-gradient-descent-methods-limitations">Using gradient descent methods, limitations </h2>
 
 <ul>
 <p><li> <b>Gradient descent (GD) finds local minima of our function</b>. Since the GD algorithm is deterministic, if it converges, it will converge to a local minimum of our energy function. Because in ML we are often dealing with extremely rugged landscapes with many local minima, this can lead to poor performance.</li>
@@ -1547,7 +1547,7 @@ plt.show()
 
 
 <section>
-<h2 id="___sec47">Stochastic Gradient Descent </h2>
+<h2 id="stochastic-gradient-descent">Stochastic Gradient Descent </h2>
 
 <p>
 Stochastic gradient descent (SGD) and variants thereof address some of
@@ -1567,7 +1567,7 @@ $$
 
 
 <section>
-<h2 id="___sec48">Computation of gradients </h2>
+<h2 id="computation-of-gradients">Computation of gradients </h2>
 
 <p>
 This in turn means that the gradient can be
@@ -1589,7 +1589,7 @@ minibatches. We denote these minibatches by \( B_k \) where
 
 
 <section>
-<h2 id="___sec49">SGD example </h2>
+<h2 id="sgd-example">SGD example </h2>
 As an example, suppose we have \( 10 \) data points \( (\mathbf{x}_1,\cdots, \mathbf{x}_{10}) \) 
 and we choose to have \( M=5 \) minibathces,
 then each minibatch contains two data points. In particular we have
@@ -1615,7 +1615,7 @@ $$
 
 
 <section>
-<h2 id="___sec50">The gradient step </h2>
+<h2 id="the-gradient-step">The gradient step </h2>
 
 <p>
 Thus a gradient descent step now looks like 
@@ -1636,12 +1636,12 @@ the number of minibatches, as exemplified in the code below.
 
 
 <section>
-<h2 id="___sec51">Simple example code </h2>
+<h2 id="simple-example-code">Simple example code </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span> 
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span> 
 
 n = <span style="color: #B452CD">100</span> <span style="color: #228B22">#100 datapoints </span>
 M = <span style="color: #B452CD">5</span>   <span style="color: #228B22">#size of each minibatch</span>
@@ -1668,7 +1668,7 @@ all \( n \) datapoints.
 
 
 <section>
-<h2 id="___sec52">When do we stop? </h2>
+<h2 id="when-do-we-stop">When do we stop? </h2>
 
 <p>
 A natural question is when do we stop the search for a new minimum?
@@ -1685,7 +1685,7 @@ gave the lowest value.
 
 
 <section>
-<h2 id="___sec53">Slightly different approach </h2>
+<h2 id="slightly-different-approach">Slightly different approach </h2>
 
 <p>
 Another approach is to let the step length \( \gamma_j \) depend on the
@@ -1707,7 +1707,7 @@ function.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span> 
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span> 
 
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">step_length</span>(t,t0,t1):
     <span style="color: #8B008B; font-weight: bold">return</span> t0/(t+t1)
@@ -1730,18 +1730,18 @@ j = <span style="color: #B452CD">0</span>
         gamma_j = step_length(t,t0,t1)
         j += <span style="color: #B452CD">1</span>
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;gamma_j after %d epochs: %g&quot;</span> % (n_epochs,gamma_j))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;gamma_j after %d epochs: %g&quot;</span> % (n_epochs,gamma_j))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec54">Program for stochastic gradient </h2>
+<h2 id="program-for-stochastic-gradient">Program for stochastic gradient </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #228B22"># Importing various packages</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #228B22"># Importing various packages</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">math</span> <span style="color: #8B008B; font-weight: bold">import</span> exp, sqrt
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">random</span> <span style="color: #8B008B; font-weight: bold">import</span> random, seed
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
@@ -1754,12 +1754,12 @@ y = <span style="color: #B452CD">4</span>+<span style="color: #B452CD">3</span>*
 
 xb = np.c_[np.ones((m,<span style="color: #B452CD">1</span>)), x]
 theta_linreg = np.linalg.inv(xb.T.dot(xb)).dot(xb.T).dot(y)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Own inversion&quot;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(theta_linreg)
-sgdreg = SGDRegressor(max_iter = <span style="color: #B452CD">50</span>, penalty=<span style="color: #658b00">None</span>, eta0=<span style="color: #B452CD">0.1</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Own inversion&quot;</span>)
+<span style="color: #658b00">print</span>(theta_linreg)
+sgdreg = SGDRegressor(max_iter = <span style="color: #B452CD">50</span>, penalty=<span style="color: #8B008B; font-weight: bold">None</span>, eta0=<span style="color: #B452CD">0.1</span>)
 sgdreg.fit(x,y.ravel())
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;sgdreg from scikit&quot;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(sgdreg.intercept_, sgdreg.coef_)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;sgdreg from scikit&quot;</span>)
+<span style="color: #658b00">print</span>(sgdreg.intercept_, sgdreg.coef_)
 
 
 theta = np.random.randn(<span style="color: #B452CD">2</span>,<span style="color: #B452CD">1</span>)
@@ -1768,10 +1768,10 @@ Niterations = <span style="color: #B452CD">1000</span>
 
 
 <span style="color: #8B008B; font-weight: bold">for</span> <span style="color: #658b00">iter</span> <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(Niterations):
-    gradients = <span style="color: #B452CD">2.0</span>/m*xb.T <span style="color: #a61717; background-color: #e3d2d2">@</span> ((xb <span style="color: #a61717; background-color: #e3d2d2">@</span> theta)-y)
+    gradients = <span style="color: #B452CD">2.0</span>/m*xb.T @ ((xb @ theta)-y)
     theta -= eta*gradients
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;theta frm own gd&quot;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(theta)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;theta frm own gd&quot;</span>)
+<span style="color: #658b00">print</span>(theta)
 
 xnew = np.array([[<span style="color: #B452CD">0</span>],[<span style="color: #B452CD">2</span>]])
 xbnew = np.c_[np.ones((<span style="color: #B452CD">2</span>,<span style="color: #B452CD">1</span>)), xnew]
@@ -1791,11 +1791,11 @@ theta = np.random.randn(<span style="color: #B452CD">2</span>,<span style="color
         random_index = np.random.randint(m)
         xi = xb[random_index:random_index+<span style="color: #B452CD">1</span>]
         yi = y[random_index:random_index+<span style="color: #B452CD">1</span>]
-        gradients = <span style="color: #B452CD">2</span> * xi.T <span style="color: #a61717; background-color: #e3d2d2">@</span> ((xi <span style="color: #a61717; background-color: #e3d2d2">@</span> theta)-yi)
+        gradients = <span style="color: #B452CD">2</span> * xi.T @ ((xi @ theta)-yi)
         eta = learning_schedule(epoch*m+i)
         theta = theta - eta*gradients
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;theta from own sdg&quot;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(theta)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;theta from own sdg&quot;</span>)
+<span style="color: #658b00">print</span>(theta)
 
 plt.plot(xnew, ypredict, <span style="color: #CD5555">&quot;r-&quot;</span>)
 plt.plot(xnew, ypredict2, <span style="color: #CD5555">&quot;b-&quot;</span>)
@@ -1812,7 +1812,7 @@ plt.show()
 
 
 <section>
-<h2 id="___sec55">Momentum based GD </h2>
+<h2 id="momentum-based-gd">Momentum based GD </h2>
 
 <p>
 The stochastic gradient descent (SGD) is almost always used with a
@@ -1853,7 +1853,7 @@ where we have defined \( \Delta \boldsymbol{\theta}_{t}= \boldsymbol{\theta}_t-\
 
 
 <section>
-<h2 id="___sec56">More on momentum based approaches </h2>
+<h2 id="more-on-momentum-based-approaches">More on momentum based approaches </h2>
 
 <p>
 Let us try to get more intuition from these equations. It is helpful
@@ -1889,7 +1889,7 @@ $$
 
 
 <section>
-<h2 id="___sec57">Momentum parameter </h2>
+<h2 id="momentum-parameter">Momentum parameter </h2>
 
 <p>
 Notice that this equation is identical to previous one if we identify
@@ -1949,7 +1949,7 @@ One of the major advantages of NAG is that it allows for the use of a larger lea
 
 
 <section>
-<h2 id="___sec58">Second moment of the gradient </h2>
+<h2 id="second-moment-of-the-gradient">Second moment of the gradient </h2>
 
 <p>
 In stochastic gradient descent, with and without momentum, we still
@@ -1977,7 +1977,7 @@ ADAM.
 
 
 <section>
-<h2 id="___sec59">RMS prop </h2>
+<h2 id="rms-prop">RMS prop </h2>
 
 <p>
 In RMS prop, in addition to keeping a running average of the first
@@ -2010,7 +2010,7 @@ learning rate for flat directions.
 
 
 <section>
-<h2 id="___sec60">ADAM optimizer </h2>
+<h2 id="adam-optimizer">ADAM optimizer </h2>
 
 <p>
 A related algorithm is the ADAM optimizer. In ADAM, we keep a running
@@ -2063,7 +2063,7 @@ $$
 
 
 <section>
-<h2 id="___sec61">Practical tips </h2>
+<h2 id="practical-tips">Practical tips </h2>
 
 <ul>
 <p><li> <b>Randomize the data when making mini-batches</b>. It is always important to randomly shuffle the data when forming mini-batches. Otherwise, the gradient descent method can fit spurious correlations resulting from the order in which data is presented.</li>
@@ -2078,7 +2078,7 @@ Geron's text, see chapter 11, has several interesting discussions.
 
 
 <section>
-<h2 id="___sec62">Automatic differentiation </h2>
+<h2 id="automatic-differentiation">Automatic differentiation </h2>
 
 <p>
 <a href="https://en.wikipedia.org/wiki/Automatic_differentiation" target="_blank">Automatic differentiation (AD)</a>, 
@@ -2130,7 +2130,7 @@ Using <b>autograd</b> we have
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 
 <span style="color: #228B22"># To do elementwise differentiation:</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> elementwise_grad <span style="color: #8B008B; font-weight: bold">as</span> egrad 
@@ -2163,13 +2163,13 @@ plt.legend()
 
 plt.show()
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The max absolute difference is: %g&quot;</span>%(np.max(np.abs(computed - analytic))))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The max absolute difference is: %g&quot;</span>%(np.max(np.abs(computed - analytic))))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec63">Using autograd </h2>
+<h2 id="using-autograd">Using autograd </h2>
 
 <p>
 Here we
@@ -2181,7 +2181,7 @@ experiment with other, possibly more complicated, functions as well.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f1</span>(x):
@@ -2193,17 +2193,17 @@ f1_grad = grad(f1)
 a = <span style="color: #B452CD">1.0</span>
 
 <span style="color: #228B22"># See the evaluated gradient at a using autograd:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The gradient of f1 evaluated at a = %g using autograd is: %g&quot;</span>%(a,f1_grad(a)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The gradient of f1 evaluated at a = %g using autograd is: %g&quot;</span>%(a,f1_grad(a)))
 
 <span style="color: #228B22"># Compare with the analytical derivative, that is f1&#39;(x) = 3*x**2 </span>
 grad_analytical = <span style="color: #B452CD">3</span>*a**<span style="color: #B452CD">2</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The gradient of f1 evaluated at a = %g by finding the analytic expression is: %g&quot;</span>%(a,grad_analytical))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The gradient of f1 evaluated at a = %g by finding the analytic expression is: %g&quot;</span>%(a,grad_analytical))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec64">Autograd with more complicated functions </h2>
+<h2 id="autograd-with-more-complicated-functions">Autograd with more complicated functions </h2>
 
 <p>
 To differentiate with respect to two (or more) arguments of a Python
@@ -2213,7 +2213,7 @@ being differentiated with respect to.
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f2</span>(x1,x2):
     <span style="color: #8B008B; font-weight: bold">return</span> <span style="color: #B452CD">3</span>*x1**<span style="color: #B452CD">3</span> + x2*(x1 - <span style="color: #B452CD">5</span>) + <span style="color: #B452CD">1</span>
@@ -2227,8 +2227,8 @@ f2_grad_x2 = grad(f2,<span style="color: #B452CD">1</span>)
 x1 = <span style="color: #B452CD">1.0</span>
 x2 = <span style="color: #B452CD">3.0</span> 
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Evaluating at x1 = %g, x2 = %g&quot;</span>%(x1,x2))
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;-&quot;</span>*<span style="color: #B452CD">30</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Evaluating at x1 = %g, x2 = %g&quot;</span>%(x1,x2))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;-&quot;</span>*<span style="color: #B452CD">30</span>)
 
 <span style="color: #228B22"># Compare with the analytical derivatives:</span>
 
@@ -2239,13 +2239,13 @@ f2_grad_x1_analytical = <span style="color: #B452CD">9</span>*x1**<span style="c
 f2_grad_x2_analytical = x1 - <span style="color: #B452CD">5</span>
 
 <span style="color: #228B22"># See the evaluated derivations:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The derivative of f2 w.r.t x1: %g&quot;</span>%( f2_grad_x1(x1,x2) ))
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f2 w.r.t x1: %g&quot;</span>%( f2_grad_x1(x1,x2) ))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The derivative of f2 w.r.t x1: %g&quot;</span>%( f2_grad_x1(x1,x2) ))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f2 w.r.t x1: %g&quot;</span>%( f2_grad_x1(x1,x2) ))
 
-<span style="color: #8B008B; font-weight: bold">print</span>()
+<span style="color: #658b00">print</span>()
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The derivative of f2 w.r.t x2: %g&quot;</span>%( f2_grad_x2(x1,x2) ))
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f2 w.r.t x2: %g&quot;</span>%( f2_grad_x2(x1,x2) ))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The derivative of f2 w.r.t x2: %g&quot;</span>%( f2_grad_x2(x1,x2) ))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f2 w.r.t x2: %g&quot;</span>%( f2_grad_x2(x1,x2) ))
 </pre></div>
 <p>
 Note that the grad function will not produce the true gradient of the function. The true gradient of a function with two or more variables will produce a vector, where each element is the function differentiated w.r.t a variable.
@@ -2253,12 +2253,12 @@ Note that the grad function will not produce the true gradient of the function. 
 
 
 <section>
-<h2 id="___sec65">More complicated functions using the elements of their arguments directly </h2>
+<h2 id="more-complicated-functions-using-the-elements-of-their-arguments-directly">More complicated functions using the elements of their arguments directly </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f3</span>(x): <span style="color: #228B22"># Assumes x is an array of length 5 or higher</span>
     <span style="color: #8B008B; font-weight: bold">return</span> <span style="color: #B452CD">2</span>*x[<span style="color: #B452CD">0</span>] + <span style="color: #B452CD">3</span>*x[<span style="color: #B452CD">1</span>] + <span style="color: #B452CD">5</span>*x[<span style="color: #B452CD">2</span>] + <span style="color: #B452CD">7</span>*x[<span style="color: #B452CD">3</span>] + <span style="color: #B452CD">11</span>*x[<span style="color: #B452CD">4</span>]**<span style="color: #B452CD">2</span>
@@ -2268,13 +2268,13 @@ f3_grad = grad(f3)
 x = np.linspace(<span style="color: #B452CD">0</span>,<span style="color: #B452CD">4</span>,<span style="color: #B452CD">5</span>)
 
 <span style="color: #228B22"># Print the computed gradient:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed gradient of f3 is: &quot;</span>, f3_grad(x))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed gradient of f3 is: &quot;</span>, f3_grad(x))
 
 <span style="color: #228B22"># The analytical gradient is: (2, 3, 5, 7, 22*x[4])</span>
 f3_grad_analytical = np.array([<span style="color: #B452CD">2</span>, <span style="color: #B452CD">3</span>, <span style="color: #B452CD">5</span>, <span style="color: #B452CD">7</span>, <span style="color: #B452CD">22</span>*x[<span style="color: #B452CD">4</span>]])
 
 <span style="color: #228B22"># Print the analytical gradient:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical gradient of f3 is: &quot;</span>, f3_grad_analytical)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical gradient of f3 is: &quot;</span>, f3_grad_analytical)
 </pre></div>
 <p>
 Note that in this case, when sending an array as input argument, the
@@ -2287,12 +2287,12 @@ could expect form a gradient-evaluting function.
 
 
 <section>
-<h2 id="___sec66">Functions using mathematical functions from Numpy </h2>
+<h2 id="functions-using-mathematical-functions-from-numpy">Functions using mathematical functions from Numpy </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f4</span>(x):
     <span style="color: #8B008B; font-weight: bold">return</span> np.sqrt(<span style="color: #B452CD">1</span>+x**<span style="color: #B452CD">2</span>) + np.exp(x) + np.sin(<span style="color: #B452CD">2</span>*np.pi*x)
@@ -2302,24 +2302,24 @@ f4_grad = grad(f4)
 x = <span style="color: #B452CD">2.7</span>
 
 <span style="color: #228B22"># Print the computed derivative:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f4 at x = %g is: %g&quot;</span>%(x,f4_grad(x)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f4 at x = %g is: %g&quot;</span>%(x,f4_grad(x)))
 
 <span style="color: #228B22"># The analytical derivative is: x/sqrt(1 + x**2) + exp(x) + cos(2*pi*x)*2*pi</span>
 f4_grad_analytical = x/np.sqrt(<span style="color: #B452CD">1</span> + x**<span style="color: #B452CD">2</span>) + np.exp(x) + np.cos(<span style="color: #B452CD">2</span>*np.pi*x)*<span style="color: #B452CD">2</span>*np.pi
 
 <span style="color: #228B22"># Print the analytical gradient:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical gradient of f4 at x = %g is: %g&quot;</span>%(x,f4_grad_analytical))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical gradient of f4 at x = %g is: %g&quot;</span>%(x,f4_grad_analytical))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec67">More autograd </h2>
+<h2 id="more-autograd">More autograd </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f5</span>(x):
     <span style="color: #8B008B; font-weight: bold">if</span> x &gt;= <span style="color: #B452CD">0</span>:
@@ -2332,18 +2332,18 @@ f5_grad = grad(f5)
 x = <span style="color: #B452CD">2.7</span>
 
 <span style="color: #228B22"># Print the computed derivative:</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f5 at x = %g is: %g&quot;</span>%(x,f5_grad(x)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f5 at x = %g is: %g&quot;</span>%(x,f5_grad(x)))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec68">And  with loops </h2>
+<h2 id="and-with-loops">And  with loops </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f6_for</span>(x):
     val = <span style="color: #B452CD">0</span>
@@ -2365,13 +2365,13 @@ f6_while_grad = grad(f6_while)
 x = <span style="color: #B452CD">0.5</span>
 
 <span style="color: #228B22"># Print the computed derivaties of f6_for and f6_while</span>
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f6_for at x = %g is: %g&quot;</span>%(x,f6_for_grad(x)))
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f6_while at x = %g is: %g&quot;</span>%(x,f6_while_grad(x)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f6_for at x = %g is: %g&quot;</span>%(x,f6_for_grad(x)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f6_while at x = %g is: %g&quot;</span>%(x,f6_while_grad(x)))
 </pre></div>
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #228B22"># Both of the functions are implementation of the sum: sum(x**i) for i = 0, ..., 9</span>
 <span style="color: #228B22"># The analytical derivative is: sum(i*x**(i-1)) </span>
@@ -2379,17 +2379,17 @@ f6_grad_analytical = <span style="color: #B452CD">0</span>
 <span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">10</span>):
     f6_grad_analytical += i*x**(i-<span style="color: #B452CD">1</span>)
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f6 at x = %g is: %g&quot;</span>%(x,f6_grad_analytical))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f6 at x = %g is: %g&quot;</span>%(x,f6_grad_analytical))
 </pre></div>
 </section>
 
 
 <section>
-<h2 id="___sec69">Using recursion </h2>
+<h2 id="using-recursion">Using recursion </h2>
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f7</span>(n): <span style="color: #228B22"># Assume that n is an integer</span>
@@ -2402,7 +2402,7 @@ f7_grad = grad(f7)
 
 n = <span style="color: #B452CD">2.0</span>
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f7 at n = %d is: %g&quot;</span>%(n,f7_grad(n)))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The computed derivative of f7 at n = %d is: %g&quot;</span>%(n,f7_grad(n)))
 
 <span style="color: #228B22"># The function f7 is an implementation of the factorial of n.</span>
 <span style="color: #228B22"># By using the product rule, one can find that the derivative is:</span>
@@ -2415,7 +2415,7 @@ f7_grad_analytical = <span style="color: #B452CD">0</span>
             tmp *= (n - k)
     f7_grad_analytical += tmp
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f7 at n = %d is: %g&quot;</span>%(n,f7_grad_analytical))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The analytical derivative of f7 at n = %d is: %g&quot;</span>%(n,f7_grad_analytical))
 </pre></div>
 <p>
 Note that if n is equal to zero or one, Autograd will give an error message. This message appears when the output is independent on input.
@@ -2423,7 +2423,7 @@ Note that if n is equal to zero or one, Autograd will give an error message. Thi
 
 
 <section>
-<h2 id="___sec70">Unsupported functions </h2>
+<h2 id="unsupported-functions">Unsupported functions </h2>
 Autograd supports many features. However, there are some functions that is not supported (yet) by Autograd.
 
 <p>
@@ -2431,7 +2431,7 @@ Assigning a value to the variable being differentiated with respect to
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f8</span>(x): <span style="color: #228B22"># Assume x is an array</span>
     x[<span style="color: #B452CD">2</span>] = <span style="color: #B452CD">3</span>
@@ -2441,7 +2441,7 @@ f8_grad = grad(f8)
 
 x = <span style="color: #B452CD">8.4</span>
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The derivative of f8 is:&quot;</span>,f8_grad(x))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The derivative of f8 is:&quot;</span>,f8_grad(x))
 </pre></div>
 <p>
 Here, Autograd tells us that an 'ArrayBox' does not support item assignment. The item assignment is done when the program tries to assign x[2] to the value 3. However, Autograd has implemented the computation of the derivative such that this assignment is not possible.
@@ -2449,11 +2449,11 @@ Here, Autograd tells us that an 'ArrayBox' does not support item assignment. The
 
 
 <section>
-<h2 id="___sec71">The syntax a.dot(b) when finding the dot product </h2>
+<h2 id="the-syntax-a-dot-b-when-finding-the-dot-product">The syntax a.dot(b) when finding the dot product </h2>
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f9</span>(a): <span style="color: #228B22"># Assume a is an array with 2 elements</span>
     b = np.array([<span style="color: #B452CD">1.0</span>,<span style="color: #B452CD">2.0</span>])
@@ -2463,7 +2463,7 @@ f9_grad = grad(f9)
 
 x = np.array([<span style="color: #B452CD">1.0</span>,<span style="color: #B452CD">0.0</span>])
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The derivative of f9 is:&quot;</span>,f9_grad(x))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The derivative of f9 is:&quot;</span>,f9_grad(x))
 </pre></div>
 <p>
 Here we are told that the 'dot' function does not belong to Autograd's
@@ -2473,7 +2473,7 @@ which also computed the dot product can be used:
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">autograd.numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">autograd</span> <span style="color: #8B008B; font-weight: bold">import</span> grad
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f9_alternative</span>(x): <span style="color: #228B22"># Assume a is an array with 2 elements</span>
     b = np.array([<span style="color: #B452CD">1.0</span>,<span style="color: #B452CD">2.0</span>])
@@ -2483,7 +2483,7 @@ f9_alternative_grad = grad(f9_alternative)
 
 x = np.array([<span style="color: #B452CD">3.0</span>,<span style="color: #B452CD">0.0</span>])
 
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;The gradient of f9 is:&quot;</span>,f9_alternative_grad(x))
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;The gradient of f9 is:&quot;</span>,f9_alternative_grad(x))
 
 <span style="color: #228B22"># The analytical gradient of the dot product of vectors x and b with two elements (x_1,x_2) and (b_1, b_2) respectively</span>
 <span style="color: #228B22"># w.r.t x is (b_1, b_2).</span>
@@ -2492,12 +2492,12 @@ x = np.array([<span style="color: #B452CD">3.0</span>,<span style="color: #B452C
 
 
 <section>
-<h2 id="___sec72">Recommended to avoid </h2>
+<h2 id="recommended-to-avoid">Recommended to avoid </h2>
 The documentation recommends to avoid inplace operations such as
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>a += b
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>a += b
 a -= b
 a*= b
 a /=b
@@ -2506,7 +2506,7 @@ a /=b
 
 
 <section>
-<h2 id="___sec73">Standard steepest descent </h2>
+<h2 id="standard-steepest-descent">Standard steepest descent </h2>
 
 <p>
 Before we proceed, we would like to discuss the approach called the
@@ -2546,7 +2546,7 @@ When we have found the exact solution, \( \boldsymbol{r}=0 \).
 
 
 <section>
-<h2 id="___sec74">Gradient method </h2>
+<h2 id="gradient-method">Gradient method </h2>
 
 <p>
 The residual is zero when we reach the minimum of the quadratic equation
@@ -2565,7 +2565,7 @@ symmetric.  This defines also the Hessian and we want it to be  positive definit
 
 
 <section>
-<h2 id="___sec75">Steepest descent  method </h2>
+<h2 id="steepest-descent-method">Steepest descent  method </h2>
 
 <p>
 We denote the initial guess for \( \boldsymbol{x} \) as \( \boldsymbol{x}_0 \). 
@@ -2592,7 +2592,7 @@ instead.
 
 
 <section>
-<h2 id="___sec76">Steepest descent  method </h2>
+<h2 id="steepest-descent-method">Steepest descent  method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2625,7 +2625,7 @@ and
 
 
 <section>
-<h2 id="___sec77">Final expressions </h2>
+<h2 id="final-expressions">Final expressions </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2677,18 +2677,18 @@ $$
 
 
 <section>
-<h2 id="___sec78">Code examples for steepest descent </h2>
+<h2 id="code-examples-for-steepest-descent">Code examples for steepest descent </h2>
 </section>
 
 
 <section>
-<h2 id="___sec79">Simple codes for  steepest descent and conjugate gradient using a \( 2\times 2 \) matrix, in c++, Python code to come </h2>
+<h2 id="simple-codes-for-steepest-descent-and-conjugate-gradient-using-a-2-times-2-matrix-in-c-python-code-to-come">Simple codes for  steepest descent and conjugate gradient using a \( 2\times 2 \) matrix, in c++, Python code to come </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
 
 <!-- code=c++ (!bc cppcod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;cmath&gt;</span><span style="color: #1e889b"></span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;cmath&gt;</span><span style="color: #1e889b"></span>
 <span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;iostream&gt;</span><span style="color: #1e889b"></span>
 <span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;fstream&gt;</span><span style="color: #1e889b"></span>
 <span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;iomanip&gt;</span><span style="color: #1e889b"></span>
@@ -2704,7 +2704,7 @@ $$
   x0(<span style="color: #B452CD">0</span>) = x0(<span style="color: #B452CD">1</span>) = <span style="color: #B452CD">0</span>;
   <span style="color: #228B22">// Set the matrix</span>
   A(<span style="color: #B452CD">0</span>,<span style="color: #B452CD">0</span>) =  <span style="color: #B452CD">3</span>;    A(<span style="color: #B452CD">1</span>,<span style="color: #B452CD">0</span>) =  <span style="color: #B452CD">2</span>;   A(<span style="color: #B452CD">0</span>,<span style="color: #B452CD">1</span>) =  <span style="color: #B452CD">2</span>;   A(<span style="color: #B452CD">1</span>,<span style="color: #B452CD">1</span>) =  <span style="color: #B452CD">6</span>;
-  b(<span style="color: #B452CD">0</span>) = <span style="color: #B452CD">2</span>; b(<span style="color: #B452CD">1</span>) = -<span style="color: #B452CD">8</span>;
+  b(<span style="color: #B452CD">0</span>) = <span style="color: #B452CD">2</span>; b(<span style="color: #B452CD">1</span>) = <span style="color: #B452CD">-8</span>;
   cout &lt;&lt; <span style="color: #CD5555">&quot;The Matrix A that we are using: &quot;</span> &lt;&lt; endl;
   A.Print();
   cout &lt;&lt; endl;
@@ -2720,13 +2720,13 @@ $$
 
 
 <section>
-<h2 id="___sec80">The routine for the steepest descent method </h2>
+<h2 id="the-routine-for-the-steepest-descent-method">The routine for the steepest descent method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
 
 <!-- code=c++ (!bc cppcod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>Vector <span style="color: #008b45">SteepestDescent</span>(Matrix A, Vector b, Vector x0){
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>Vector <span style="color: #008b45">SteepestDescent</span>(Matrix A, Vector b, Vector x0){
   <span style="color: #00688B; font-weight: bold">int</span> IterMax, i;
   <span style="color: #00688B; font-weight: bold">int</span> dim = x0.Dimension();
   <span style="color: #8B008B; font-weight: bold">const</span> <span style="color: #00688B; font-weight: bold">double</span> tolerance = <span style="color: #B452CD">1.0e-14</span>;
@@ -2754,12 +2754,12 @@ $$
 
 
 <section>
-<h2 id="___sec81">Steepest descent example </h2>
+<h2 id="steepest-descent-example">Steepest descent example </h2>
 
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy.linalg</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">la</span>
 
 <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">scipy.optimize</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">sopt</span>
@@ -2776,7 +2776,7 @@ $$
 fig = pt.figure()
 ax = fig.gca(projection=<span style="color: #CD5555">&quot;3d&quot;</span>)
 
-xmesh, ymesh = np.mgrid[-<span style="color: #B452CD">2</span>:<span style="color: #B452CD">2</span>:<span style="color: #B452CD">50j</span>,-<span style="color: #B452CD">2</span>:<span style="color: #B452CD">2</span>:<span style="color: #B452CD">50j</span>]
+xmesh, ymesh = np.mgrid[-<span style="color: #B452CD">2</span>:<span style="color: #B452CD">2</span>:<span style="color: #B452CD">50</span>j,-<span style="color: #B452CD">2</span>:<span style="color: #B452CD">2</span>:<span style="color: #B452CD">50</span>j]
 fmesh = f(np.array([xmesh, ymesh]))
 ax.plot_surface(xmesh, ymesh, fmesh)
 </pre></div>
@@ -2785,7 +2785,7 @@ And then as countor plot
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>pt.axis(<span style="color: #CD5555">&quot;equal&quot;</span>)
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>pt.axis(<span style="color: #CD5555">&quot;equal&quot;</span>)
 pt.contour(xmesh, ymesh, fmesh)
 guesses = [np.array([<span style="color: #B452CD">2</span>, <span style="color: #B452CD">2.</span>/<span style="color: #B452CD">5</span>])]
 </pre></div>
@@ -2794,7 +2794,7 @@ Find guesses
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>x = guesses[-<span style="color: #B452CD">1</span>]
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>x = guesses[-<span style="color: #B452CD">1</span>]
 s = -df(x)
 </pre></div>
 <p>
@@ -2802,20 +2802,20 @@ Run it!
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f1d</span>(alpha):
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f1d</span>(alpha):
     <span style="color: #8B008B; font-weight: bold">return</span> f(x + alpha*s)
 
 alpha_opt = sopt.golden(f1d)
 next_guess = x + alpha_opt * s
 guesses.append(next_guess)
-<span style="color: #8B008B; font-weight: bold">print</span>(next_guess)
+<span style="color: #658b00">print</span>(next_guess)
 </pre></div>
 <p>
 What happened?
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span></span>pt.axis(<span style="color: #CD5555">&quot;equal&quot;</span>)
+<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%;"><span></span>pt.axis(<span style="color: #CD5555">&quot;equal&quot;</span>)
 pt.contour(xmesh, ymesh, fmesh, <span style="color: #B452CD">50</span>)
 it_array = np.array(guesses)
 pt.plot(it_array.T[<span style="color: #B452CD">0</span>], it_array.T[<span style="color: #B452CD">1</span>], <span style="color: #CD5555">&quot;x-&quot;</span>)
@@ -2824,7 +2824,7 @@ pt.plot(it_array.T[<span style="color: #B452CD">0</span>], it_array.T[<span styl
 
 
 <section>
-<h2 id="___sec82">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2857,7 +2857,7 @@ this inner product. Being conjugate is a symmetric relation: if \( \boldsymbol{s
 
 
 <section>
-<h2 id="___sec83">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2876,7 +2876,7 @@ which is zero unless \( i=j \).
 
 
 <section>
-<h2 id="___sec84">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2906,7 +2906,7 @@ $$
 
 
 <section>
-<h2 id="___sec85">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2943,7 +2943,7 @@ $$
 
 
 <section>
-<h2 id="___sec86">Conjugate gradient method and iterations </h2>
+<h2 id="conjugate-gradient-method-and-iterations">Conjugate gradient method and iterations </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -2980,7 +2980,7 @@ instead.
 
 
 <section>
-<h2 id="___sec87">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -3013,7 +3013,7 @@ hence the name conjugate gradient method.
 
 
 <section>
-<h2 id="___sec88">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -3045,7 +3045,7 @@ $$
 
 
 <section>
-<h2 id="___sec89">Conjugate gradient method </h2>
+<h2 id="conjugate-gradient-method">Conjugate gradient method </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
@@ -3090,7 +3090,7 @@ $$
 
 
 <section>
-<h2 id="___sec90">Broyden&#8211;Fletcher&#8211;Goldfarb&#8211;Shanno algorithm </h2>
+<h2 id="broyden-fletcher-goldfarb-shanno-algorithm">Broyden&#8211;Fletcher&#8211;Goldfarb&#8211;Shanno algorithm </h2>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
