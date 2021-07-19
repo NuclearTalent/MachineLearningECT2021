@@ -257,23 +257,31 @@ Note that the remaining days we will present and discuss how to read and handle 
 
 
 === Recommended textbook ===
-!bblock
-* "Aurelien Geron, Hands‑On Machine Learning with Scikit‑Learn and TensorFlow, O'Reilly":"https://github.com/CompPhysics/MachineLearning/blob/master/doc/Textbooks/TensorflowML.pdf"
+
+!bblock Recommended textbooks:
+In addition to the lecture notes, we recommend the books of Bishop and Goodfellow et al.
+
+o Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer, https://www.springer.com/gp/book/9780387310732. Chapters 1-7, 11 and 12. If you login to the University Library or access this site via a University IP number, you can download for free the textbook in PDF format or epub format.
+o Ian Goodfellow, Yoshua Bengio, and Aaron Courville. The different chapters are available for free at https://www.deeplearningbook.org/. Chapters 2-14 are highly recommended. 
+_Additional textbooks_:
+o Trevor Hastie, Robert Tibshirani, Jerome H. Friedman, The Elements of Statistical Learning, Springer, https://www.springer.com/gp/book/9780387848570. This is a well-known text and serves as additional literature.
+o Aurelien Geron, Hands‑On Machine Learning with Scikit‑Learn and TensorFlow, O'Reilly, https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/. This text is very useful since it contains many code examples and hands-on applications of all algorithms discussed in this course.
 !eblock
 
-!bblock General learning book on statistical analysis:
-* Trevor Hastie, Robert Tibshirani, Jerome H. Friedman, The Elements of Statistical Learning, Springer
+
+!bblock  General learning book on statistical analysis:
+o Christian Robert and George Casella, Monte Carlo Statistical Methods, Springer
+o Peter Hoff, A first course in Bayesian statistical models, Springer
 !eblock
 
 !bblock General Machine Learning Books:
 * Kevin Murphy, Machine Learning: A Probabilistic Perspective, MIT Press
-* Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer
 * David J.C. MacKay, Information Theory, Inference, and Learning Algorithms, Cambridge University Press
 * David Barber, Bayesian Reasoning and Machine Learning, Cambridge University Press 
 !eblock
 
 
-!bblock Excellent Videos on TensorFlow and other Machine Learning topics
+!bblock Excellent Videos on TensorFlow and other Machine Learning topics:
 * URL:"https://www.youtube.com/watch?v=HlBGYxO8RaU&list=PLQY2H8rRoyvzuJw20FG82Lgm2SZjTdIXU" 
 !eblock
 
