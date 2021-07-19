@@ -133,15 +133,26 @@ The target group is Master of Science students, PhD students and early post-doct
 
 ## Possible textbooks
 
-_Recommended textbook_:
-- Aurelien Geron, Hands‑On Machine Learning with Scikit‑Learn and TensorFlow, O'Reilly
+## Textbooks
+
+_Recommended textbooks_:
+In addition to the lecture notes, we recommend the books of Bishop and Goodfellow et al. 
+- Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer, https://www.springer.com/gp/book/9780387310732. Chapters 1-7, 11 and 12 are the most relevant. If you login to your University Library or access this site via a University IP number, you can download for free the textbook in PDF format or epub format.
+- Ian Goodfellow, Yoshua Bengio, and Aaron Courville. The different chapters are available for free at https://www.deeplearningbook.org/. Chapters 2-14 are highly recommended. 
+_Additional textbooks_:
+- Trevor Hastie, Robert Tibshirani, Jerome H. Friedman, The Elements of Statistical Learning, Springer, https://www.springer.com/gp/book/9780387848570. This is a well-known text and serves as additional literature.
+- Aurelien Geron, Hands‑On Machine Learning with Scikit‑Learn and TensorFlow, O'Reilly, https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/. This text is very useful since it contains many code examples and hands-on applications of all algorithms discussed in this course.
+
+
+
 
 _General learning book on statistical analysis_:
 - Christian Robert and George Casella, Monte Carlo Statistical Methods, Springer
 - Peter Hoff, A first course in Bayesian statistical models, Springer
-- Trevor Hastie, Robert Tibshirani, Jerome H. Friedman, The Elements of Statistical Learning, Springer
+
 _General Machine Learning Books_:
 - Kevin Murphy, Machine Learning: A Probabilistic Perspective, MIT Press
-- Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer
 - David J.C. MacKay, Information Theory, Inference, and Learning Algorithms, Cambridge University Press
 - David Barber, Bayesian Reasoning and Machine Learning, Cambridge University Press 
+
+
