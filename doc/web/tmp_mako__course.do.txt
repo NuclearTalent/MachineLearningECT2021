@@ -32,7 +32,7 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
    * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Introduction/ipynb/Introduction.ipynb"
 
 
-===== Monday July 20: Linear Regression =====
+===== Monday July 19 and parts of Tuesday: Linear Regression =====
 
 
 
@@ -47,7 +47,7 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
    * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day1/ipynb/Day1.ipynb"
 
 
-===== Tuesday July 21: Logistic Regression and Gradient Methods =====
+===== Tuesday July 20: Logistic Regression and Gradient Methods =====
 
 
 
@@ -62,7 +62,7 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
    * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day2/ipynb/Day2.ipynb"
 
 
-===== Wednesday July 22: Decision Trees, Random Forests, Bagging and Boosting =====
+===== Wednesday July 21: Decision Trees, Random Forests, Bagging and Boosting =====
 
 
 
@@ -77,7 +77,7 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
    * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day3/ipynb/Day3.ipynb"
 
 
-===== Thursday July 23: Introduction to Neural Networks and Deep Learning =====
+===== Thursday July 22: Introduction to Neural Networks and Deep Learning =====
 
 
 
@@ -92,7 +92,7 @@ AUTHOR: "Raghuram Ramanujan":"https://www.davidson.edu/academics/mathematics-and
    * "ipynb file": "https://nucleartalent.github.io/MachineLearningECT2021/doc/pub/Day4/ipynb/Day4.ipynb"
 
 
-===== Friday July 24: Beta-decay experiments, how to analyze various events, with hands-on examples  =====
+===== Friday July 23: Beta-decay experiments, how to analyze various events, with hands-on examples  =====
 
 
 
