@@ -2520,6 +2520,11 @@ flexible statistical methods have higher variance.
 You may also find this recent "article":"https://www.pnas.org/content/116/32/15849" of interest.
 
 
+!split 
+=====  Bias-variance tradeoff in figures  =====
+
+FIGURE: [fig/biasvariance.png, width=800 frac=0.8]
+
 
 !split 
 =====  The same example but now with cross-validation =====
