@@ -123,7 +123,7 @@ First and second days: Exercise set 1
 
 % --- begin date ---
 \begin{center}
-Jul 1, 2020
+Jul 21, 2021
 \end{center}
 % --- end date ---
 
@@ -140,7 +140,7 @@ Jul 1, 2020
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: Getting started}
-
+                             
 
 The first exercise here is of a mere technical art. We want you to have 
 \begin{itemize}
@@ -230,7 +230,7 @@ We recommend using \textbf{Anaconda}.
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: Our first Python encounter}
-
+                             
 
 This exercise has as its aim to write a small program which reads in data from a \textbf{csv} file on the equation of state for dense nuclear matter. The file is localized at \href{{https://github.com/mhjensen/MachineLearningMSU-FRIB2020/blob/master/doc/pub/Regression/ipynb/datafiles/EoS.csv}}{\nolinkurl{https://github.com/mhjensen/MachineLearningMSU-FRIB2020/blob/master/doc/pub/Regression/ipynb/datafiles/EoS.csv}}. Thereafter you will have to set up the design matrix $\bm{X}$ for the  $n$
 datapoints and a polynomial of degree $3$. The steps are:
@@ -328,7 +328,7 @@ print(MSE(y_test,ypredict))
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: making your own data and exploring scikit-learn}
-
+                             
 
 We will generate our own dataset for a function $y(x)$ where $x \in [0,1]$ and defined by random numbers computed with the uniform distribution. The function $y$ is a quadratic polynomial in $x$ with added stochastic noise according to the normal distribution $\cal {N}(0,1)$.
 The following simple Python instructions define our $x$ and $y$ values (with 100 data points).
@@ -421,7 +421,7 @@ print(MSE(y_test,ypredict))
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: mean values and variances in linear regression}
-
+                             
 
 This exercise deals with various mean values ad variances in  linear regression method (here it may be useful to look up chapter 3, equation (3.8) of \href{{https://www.springer.com/gp/book/9780387848570}}{Trevor Hastie, Robert Tibshirani, Jerome H. Friedman, The Elements of Statistical Learning, Springer}).
 
@@ -477,7 +477,6 @@ its variance is
 \end{align*}
 Hence, $y_i \sim \mathcal{N}( \mathbf{X}_{i, \ast} \, \bm{\beta}, \sigma^2)$, that is $\bm{y}$ follows a normal distribution with 
 mean value $\bm{X}\bm{\beta}$ and variance $\sigma^2$ (not be confused with the singular values of the SVD).
-
 % --- end solution of exercise ---
 
 \subex{b)}
@@ -493,7 +492,6 @@ With the OLS expressions for the parameters $\bm{\beta}$ show that
 \mathbb{E}(\bm{\beta}) = \mathbb{E}[ (\mathbf{X}^{\top} \mathbf{X})^{-1}\mathbf{X}^{T} \mathbf{Y}]=(\mathbf{X}^{T} \mathbf{X})^{-1}\mathbf{X}^{T} \mathbb{E}[ \mathbf{Y}]=(\mathbf{X}^{T} \mathbf{X})^{-1} \mathbf{X}^{T}\mathbf{X}\bm{\beta}=\bm{\beta}.
 \]
 This means that the estimator of the regression parameters is unbiased.
-
 % --- end solution of exercise ---
 
 \subex{c)}
@@ -540,7 +538,6 @@ construct a confidence interval for the estimates.
 In a similar way, we can obtain analytical expressions for say the
 expectation values of the parameters $\bm{\beta}$ and their variance
 when we employ Ridge regression, allowing us again to define a confidence interval.
-
 % --- end solution of exercise ---
 
 \end{doconceexercise}
@@ -554,7 +551,7 @@ when we employ Ridge regression, allowing us again to define a confidence interv
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: Playing with nuclear masses}
-
+                             
 
 Finally, try now to write your own code (you can use the example the nuclear masses in the lecture slides on Regression and Getting started from Day1, that reads in the nuclear masses and
 compute the proton separation energies, the two-neutron and two-proton separation energies and finally the shell gaps for selected nuclei.
@@ -690,7 +687,7 @@ Nucleus = Nucleus.dropna()
 # Here we do the magic and obtain the neutron separation energies, one line of code!!
 Nucleus['NeutronSeparationEnergies'] = Nucleus['Energies'].diff(+1)
 print(Nucleus)
-MakePlot([Nucleus.A], [Nucleus.NeutronSeparationEnergies], ['b'], ['Neutron Separation Energy'], ['$A$','$S_n$'])
+#MakePlot([Nucleus.A], [Nucleus.NeutronSeparationEnergies], ['b'], ['Neutron Separation Energy'], ['$A$','$S_n$'])
 save_fig('Nucleus')
 plt.show()
 

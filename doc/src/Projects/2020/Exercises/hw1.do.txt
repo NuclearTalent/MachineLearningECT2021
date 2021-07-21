@@ -512,7 +512,7 @@ Nucleus = Nucleus.dropna()
 # Here we do the magic and obtain the neutron separation energies, one line of code!!
 Nucleus['NeutronSeparationEnergies'] = Nucleus['Energies'].diff(+1)
 print(Nucleus)
-MakePlot([Nucleus.A], [Nucleus.NeutronSeparationEnergies], ['b'], ['Neutron Separation Energy'], ['$A$','$S_n$'])
+#MakePlot([Nucleus.A], [Nucleus.NeutronSeparationEnergies], ['b'], ['Neutron Separation Energy'], ['$A$','$S_n$'])
 save_fig('Nucleus')
 plt.show()
 
