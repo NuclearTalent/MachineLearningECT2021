@@ -1,11 +1,11 @@
 <!--
 Automatically generated HTML file from DocOnce source
-(https://github.com/hplgit/doconce/)
+(https://github.com/doconce/doconce/)
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Day 3: Exercise set 2">
 
@@ -40,12 +40,15 @@ div { text-align: justify; text-justify: inter-word; }
 
 <!-- tocinfo
 {'highest level': 2,
- 'sections': [('Day three exercises', 2, None, '___sec0'),
+ 'sections': [('Day three exercises', 2, None, 'day-three-exercises'),
               ('Exercise 1: Adding Ridge and Lasso Regression',
                2,
                None,
-               '___sec1'),
-              ('Exercise 2: Normalizing our data', 2, None, '___sec2')]}
+               'exercise-1-adding-ridge-and-lasso-regression'),
+              ('Exercise 2: Normalizing our data',
+               2,
+               None,
+               'exercise-2-normalizing-our-data')]}
 end of tocinfo -->
 
 <body>
@@ -85,15 +88,15 @@ MathJax.Hub.Config({
 
 <br>
 <p>
-<center><h4>Jul 2, 2020</h4></center> <!-- date -->
+<center><h4>Jul 22, 2021</h4></center> <!-- date -->
 <br>
 
-<h2 id="___sec0">Day three exercises </h2>
+<h2 id="day-three-exercises">Day three exercises </h2>
 
 <p>
 <!-- --- begin exercise --- -->
 
-<h2 id="___sec1">Exercise 1: Adding Ridge and Lasso Regression </h2>
+<h2 id="exercise-1-adding-ridge-and-lasso-regression">Exercise 1: Adding Ridge and Lasso Regression </h2>
 
 <p>
 This exercise is a continuation of exercise 3 from exercise set 1. We will
@@ -113,7 +116,7 @@ The following simple Python instructions define our \( x \) and \( y \) values (
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(<span style="color: #666666">100</span>)
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(<span style="color: #666666">100</span>)
 y <span style="color: #666666">=</span> <span style="color: #666666">2.0+5*</span>x<span style="color: #666666">*</span>x<span style="color: #666666">+0.1*</span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>randn(<span style="color: #666666">100</span>)
 </pre></div>
 <p>
@@ -127,7 +130,7 @@ The code here allows you to perform your own Ridge calculation and perform calcu
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">os</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">os</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
@@ -163,19 +166,19 @@ X_train_scaled <span style="color: #666666">=</span> scaler<span style="color: #
 X_test_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(X_test)
 
 <span style="color: #408080; font-style: italic"># matrix inversion to find beta</span>
-OLSbeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T @ X_train) @ X_train<span style="color: #666666">.</span>T @ y_train
-<span style="color: #008000; font-weight: bold">print</span>(OLSbeta)
+OLSbeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> X_train) <span style="color: #666666">@</span> X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> y_train
+<span style="color: #008000">print</span>(OLSbeta)
 <span style="color: #408080; font-style: italic"># and then make the prediction</span>
-ytildeOLS <span style="color: #666666">=</span> X_train @ OLSbeta
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Training R2 for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(R2(y_train,ytildeOLS))
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Training MSE for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(MSE(y_train,ytildeOLS))
-ypredictOLS <span style="color: #666666">=</span> X_test @ OLSbeta
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Test R2 for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(R2(y_test,ypredictOLS))
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Test MSE OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(MSE(y_test,ypredictOLS))
+ytildeOLS <span style="color: #666666">=</span> X_train <span style="color: #666666">@</span> OLSbeta
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Training R2 for OLS&quot;</span>)
+<span style="color: #008000">print</span>(R2(y_train,ytildeOLS))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Training MSE for OLS&quot;</span>)
+<span style="color: #008000">print</span>(MSE(y_train,ytildeOLS))
+ypredictOLS <span style="color: #666666">=</span> X_test <span style="color: #666666">@</span> OLSbeta
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Test R2 for OLS&quot;</span>)
+<span style="color: #008000">print</span>(R2(y_test,ypredictOLS))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Test MSE OLS&quot;</span>)
+<span style="color: #008000">print</span>(MSE(y_test,ypredictOLS))
 
 <span style="color: #408080; font-style: italic"># Repeat now for Ridge regression and various values of the regularization parameter</span>
 I <span style="color: #666666">=</span> np<span style="color: #666666">.</span>eye(p,p)
@@ -186,10 +189,10 @@ MSETrain <span style="color: #666666">=</span> np<span style="color: #666666">.<
 lambdas <span style="color: #666666">=</span> np<span style="color: #666666">.</span>logspace(<span style="color: #666666">-4</span>, <span style="color: #666666">1</span>, nlambdas)
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(nlambdas):
     lmb <span style="color: #666666">=</span> lambdas[i]
-    Ridgebeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T @ X_train<span style="color: #666666">+</span>lmb<span style="color: #666666">*</span>I) @ X_train<span style="color: #666666">.</span>T @ y_train
+    Ridgebeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> X_train<span style="color: #666666">+</span>lmb<span style="color: #666666">*</span>I) <span style="color: #666666">@</span> X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> y_train
     <span style="color: #408080; font-style: italic"># and then make the prediction</span>
-    ytildeRidge <span style="color: #666666">=</span> X_train @ Ridgebeta
-    ypredictRidge <span style="color: #666666">=</span> X_test @ Ridgebeta
+    ytildeRidge <span style="color: #666666">=</span> X_train <span style="color: #666666">@</span> Ridgebeta
+    ypredictRidge <span style="color: #666666">=</span> X_test <span style="color: #666666">@</span> Ridgebeta
     MSEPredict[i] <span style="color: #666666">=</span> MSE(y_test,ypredictRidge)
     MSETrain[i] <span style="color: #666666">=</span> MSE(y_train,ytildeRidge)
 <span style="color: #408080; font-style: italic"># Now plot the resulys</span>
@@ -215,7 +218,7 @@ To use <b>scikit-learn</b> with Ridge, we simply need to add the relevant functi
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">pd</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.model_selection</span> <span style="color: #008000; font-weight: bold">import</span> train_test_split
@@ -251,19 +254,19 @@ X_train_scaled <span style="color: #666666">=</span> scaler<span style="color: #
 X_test_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(X_test)
 
 <span style="color: #408080; font-style: italic"># matrix inversion to find beta</span>
-OLSbeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T @ X_train) @ X_train<span style="color: #666666">.</span>T @ y_train
-<span style="color: #008000; font-weight: bold">print</span>(OLSbeta)
+OLSbeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> X_train) <span style="color: #666666">@</span> X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> y_train
+<span style="color: #008000">print</span>(OLSbeta)
 <span style="color: #408080; font-style: italic"># and then make the prediction</span>
-ytildeOLS <span style="color: #666666">=</span> X_train @ OLSbeta
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Training R2 for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(R2(y_train,ytildeOLS))
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Training MSE for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(MSE(y_train,ytildeOLS))
-ypredictOLS <span style="color: #666666">=</span> X_test @ OLSbeta
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Test R2 for OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(R2(y_test,ypredictOLS))
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Test MSE OLS&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(MSE(y_test,ypredictOLS))
+ytildeOLS <span style="color: #666666">=</span> X_train <span style="color: #666666">@</span> OLSbeta
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Training R2 for OLS&quot;</span>)
+<span style="color: #008000">print</span>(R2(y_train,ytildeOLS))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Training MSE for OLS&quot;</span>)
+<span style="color: #008000">print</span>(MSE(y_train,ytildeOLS))
+ypredictOLS <span style="color: #666666">=</span> X_test <span style="color: #666666">@</span> OLSbeta
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Test R2 for OLS&quot;</span>)
+<span style="color: #008000">print</span>(R2(y_test,ypredictOLS))
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Test MSE OLS&quot;</span>)
+<span style="color: #008000">print</span>(MSE(y_test,ypredictOLS))
 
 <span style="color: #408080; font-style: italic"># Repeat now for Ridge regression and various values of the regularization parameter</span>
 I <span style="color: #666666">=</span> np<span style="color: #666666">.</span>eye(p,p)
@@ -278,10 +281,10 @@ lambdas <span style="color: #666666">=</span> np<span style="color: #666666">.</
     <span style="color: #408080; font-style: italic"># add ridge</span>
     clf_ridge <span style="color: #666666">=</span> skl<span style="color: #666666">.</span>Ridge(alpha<span style="color: #666666">=</span>lmb)<span style="color: #666666">.</span>fit(X_train, y_train)
     yridge <span style="color: #666666">=</span> clf_ridge<span style="color: #666666">.</span>predict(X_test)
-    Ridgebeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T @ X_train<span style="color: #666666">+</span>lmb<span style="color: #666666">*</span>I) @ X_train<span style="color: #666666">.</span>T @ y_train
+    Ridgebeta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>inv(X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> X_train<span style="color: #666666">+</span>lmb<span style="color: #666666">*</span>I) <span style="color: #666666">@</span> X_train<span style="color: #666666">.</span>T <span style="color: #666666">@</span> y_train
     <span style="color: #408080; font-style: italic"># and then make the prediction</span>
-    ytildeRidge <span style="color: #666666">=</span> X_train @ Ridgebeta
-    ypredictRidge <span style="color: #666666">=</span> X_test @ Ridgebeta
+    ytildeRidge <span style="color: #666666">=</span> X_train <span style="color: #666666">@</span> Ridgebeta
+    ypredictRidge <span style="color: #666666">=</span> X_test <span style="color: #666666">@</span> Ridgebeta
     MSEPredict[i] <span style="color: #666666">=</span> MSE(y_test,ypredictRidge)
     MSEPredictSKL[i] <span style="color: #666666">=</span> MSE(y_test,yridge)
     MSETrain[i] <span style="color: #666666">=</span> MSE(y_train,ytildeRidge)
@@ -363,8 +366,6 @@ for i in range(nlambdas):
     lmb = lambdas[i]
     Ridgebeta = np.linalg.inv(X_train.T @ X_train+lmb*I) @ X_train.T @ y_train
     print(np.linalg.inv(X_train.T @ X_train+lmb*I))
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>
@@ -452,8 +453,6 @@ plt.xlabel('log10(lambda)')
 plt.ylabel('MSE')
 plt.legend()
 plt.show()
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>
@@ -480,8 +479,6 @@ Discuss these quantities as functions of the variable \( \lambda \) in the Ridge
 <!-- --- begin solution of exercise --- -->
 <b>Solution.</b>
 These results can all be studied with the codes we have above. These scores are included in the codes above.
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>
@@ -490,7 +487,7 @@ These results can all be studied with the codes we have above. These scores are 
 <p>
 <!-- --- begin exercise --- -->
 
-<h2 id="___sec2">Exercise 2: Normalizing our data </h2>
+<h2 id="exercise-2-normalizing-our-data">Exercise 2: Normalizing our data </h2>
 
 <p>
 A much used approach before starting to train the data is  to preprocess our
@@ -534,7 +531,7 @@ for testing. This can be done as follows with our design matrix \( \boldsymbol{X
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># split in training and test data</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># split in training and test data</span>
 X_train, X_test, y_train, y_test <span style="color: #666666">=</span> train_test_split(X,y,test_size<span style="color: #666666">=0.2</span>)
 </pre></div>
 <p>
@@ -542,7 +539,7 @@ Then we can use the standard scaler to scale our data as
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>scaler <span style="color: #666666">=</span> StandardScaler()
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>scaler <span style="color: #666666">=</span> StandardScaler()
 scaler<span style="color: #666666">.</span>fit(X_train)
 X_train_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(X_train)
 X_test_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(X_test)
@@ -562,7 +559,7 @@ Our data is defined by \( x\in [-3,3] \) with a total of for example \( 100 \) d
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>seed()
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>seed()
 n <span style="color: #666666">=</span> <span style="color: #666666">100</span>
 maxdegree <span style="color: #666666">=</span> <span style="color: #666666">14</span>
 <span style="color: #408080; font-style: italic"># Make data set.</span>
@@ -582,7 +579,7 @@ Write a first code which sets up a design matrix \( X \) defined by a fifth-orde
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.linear_model</span> <span style="color: #008000; font-weight: bold">import</span> LinearRegression, Ridge, Lasso
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">sklearn.preprocessing</span> <span style="color: #008000; font-weight: bold">import</span> PolynomialFeatures
@@ -601,13 +598,13 @@ TrainError <span style="color: #666666">=</span> np<span style="color: #666666">
 polydegree <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros(maxdegree)
 x_train, x_test, y_train, y_test <span style="color: #666666">=</span> train_test_split(x, y, test_size<span style="color: #666666">=0.2</span>)
 scaler <span style="color: #666666">=</span> StandardScaler()
-scaler<span style="color: #666666">.</span>fit(X_train)
+scaler<span style="color: #666666">.</span>fit(x_train)
 x_train_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(x_train)
 x_test_scaled <span style="color: #666666">=</span> scaler<span style="color: #666666">.</span>transform(x_test)
 
 <span style="color: #008000; font-weight: bold">for</span> degree <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(maxdegree):
-    model <span style="color: #666666">=</span> make_pipeline(PolynomialFeatures(degree<span style="color: #666666">=</span>degree), LinearRegression(fit_intercept<span style="color: #666666">=</span><span style="color: #008000">False</span>))
-    clf <span style="color: #666666">=</span> model<span style="color: #666666">.</span>fit(x_train_scale,y_train)
+    model <span style="color: #666666">=</span> make_pipeline(PolynomialFeatures(degree<span style="color: #666666">=</span>degree), LinearRegression(fit_intercept<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">False</span>))
+    clf <span style="color: #666666">=</span> model<span style="color: #666666">.</span>fit(x_train_scaled,y_train)
     y_fit <span style="color: #666666">=</span> clf<span style="color: #666666">.</span>predict(x_train_scaled)
     y_pred <span style="color: #666666">=</span> clf<span style="color: #666666">.</span>predict(x_test_scaled) 
     polydegree[degree] <span style="color: #666666">=</span> degree
@@ -630,8 +627,6 @@ Perform an ordinary least squares and compute the means squared error and the \(
 <!-- --- begin solution of exercise --- -->
 <b>Solution.</b>
 This requires a simple extension to the above code where you simply add a statement calling the \( R2 \) function included in the same code.
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>
@@ -642,8 +637,6 @@ Add now a model which allows you to make polynomials up to degree \( 15 \).  Per
 <!-- --- begin solution of exercise --- -->
 <b>Solution.</b>
 Here you simply need to change the degree of the polynomial in the above code to \( n=15 \).
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>
@@ -657,7 +650,7 @@ Here you need to add for example the same loop over the parameters \( \lambda \)
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>nlambdas <span style="color: #666666">=</span> <span style="color: #666666">100</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>nlambdas <span style="color: #666666">=</span> <span style="color: #666666">100</span>
 MSEPredictRidge <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros(nlambdas)
 lambdas <span style="color: #666666">=</span> np<span style="color: #666666">.</span>logspace(<span style="color: #666666">-4</span>, <span style="color: #666666">0</span>, nlambdas)
 <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(nlambdas):
@@ -667,8 +660,6 @@ lambdas <span style="color: #666666">=</span> np<span style="color: #666666">.</
 </pre></div>
 <p>
 The plotting functionality of the first exercise can be reused here as well.
-
-<p>
 <!-- --- end solution of exercise --- -->
 
 <p>

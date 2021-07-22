@@ -119,7 +119,7 @@ Day 3: Exercise set 2
 
 % --- begin date ---
 \begin{center}
-Jul 2, 2020
+Jul 22, 2021
 \end{center}
 % --- end date ---
 
@@ -136,7 +136,7 @@ Jul 2, 2020
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: Adding Ridge and Lasso Regression}
-
+                             
 
 This exercise is a continuation of exercise 3 from exercise set 1. We will
 use the same function to generate our data set, still staying with a
@@ -238,7 +238,6 @@ plt.ylabel('MSE')
 plt.legend()
 plt.show()
 \end{minted}
-
 % --- end solution of exercise ---
 
 \subex{b)}
@@ -329,7 +328,6 @@ plt.ylabel('MSE')
 plt.legend()
 plt.show()
 \end{minted}
-
 % --- end solution of exercise ---
 
 \subex{c)}
@@ -391,7 +389,6 @@ for i in range(nlambdas):
     lmb = lambdas[i]
     Ridgebeta = np.linalg.inv(X_train.T @ X_train+lmb*I) @ X_train.T @ y_train
     print(np.linalg.inv(X_train.T @ X_train+lmb*I))
-
 % --- end solution of exercise ---
 
 \subex{d)}
@@ -474,7 +471,6 @@ plt.xlabel('log10(lambda)')
 plt.ylabel('MSE')
 plt.legend()
 plt.show()
-
 % --- end solution of exercise ---
 
 \subex{e)}
@@ -497,7 +493,6 @@ Discuss these quantities as functions of the variable $\lambda$ in the Ridge and
 % --- begin solution of exercise ---
 \paragraph{Solution.}
 These results can all be studied with the codes we have above. These scores are included in the codes above.
-
 % --- end solution of exercise ---
 
 
@@ -512,7 +507,7 @@ These results can all be studied with the codes we have above. These scores are 
 \refstepcounter{doconceexercisecounter}
 
 \exercisesection*{Exercise \thedoconceexercisecounter: Normalizing our data}
-
+                             
 
 A much used approach before starting to train the data is  to preprocess our
 data. Normally the data may need a rescaling and/or may be sensitive
@@ -610,13 +605,13 @@ TrainError = np.zeros(maxdegree)
 polydegree = np.zeros(maxdegree)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 scaler = StandardScaler()
-scaler.fit(X_train)
+scaler.fit(x_train)
 x_train_scaled = scaler.transform(x_train)
 x_test_scaled = scaler.transform(x_test)
 
 for degree in range(maxdegree):
     model = make_pipeline(PolynomialFeatures(degree=degree), LinearRegression(fit_intercept=False))
-    clf = model.fit(x_train_scale,y_train)
+    clf = model.fit(x_train_scaled,y_train)
     y_fit = clf.predict(x_train_scaled)
     y_pred = clf.predict(x_test_scaled) 
     polydegree[degree] = degree
@@ -628,7 +623,6 @@ plt.plot(polydegree, TrainError, label='Train Error')
 plt.legend()
 plt.show()
 \end{minted}
-
 % --- end solution of exercise ---
 
 \subex{b)}
@@ -638,7 +632,6 @@ Perform an ordinary least squares and compute the means squared error and the $R
 % --- begin solution of exercise ---
 \paragraph{Solution.}
 This requires a simple extension to the above code where you simply add a statement calling the $R2$ function included in the same code.
-
 % --- end solution of exercise ---
 
 \subex{c)}
@@ -648,7 +641,6 @@ Add now a model which allows you to make polynomials up to degree $15$.  Perform
 % --- begin solution of exercise ---
 \paragraph{Solution.}
 Here you simply need to change the degree of the polynomial in the above code to $n=15$.
-
 % --- end solution of exercise ---
 
 \subex{d)}
@@ -669,7 +661,6 @@ for i in range(nlambdas):
 
 \end{minted}
 The plotting functionality of the first exercise can be reused here as well.
-
 % --- end solution of exercise ---
 
 
